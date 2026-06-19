@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bazaar Printing — E2E Test Dashboard</title>
+  <script src="data.js"></script>
+  <style>
+    /* ── Tokens ─────────────────────────────────────────────────── */
+    :root {
+      --bg:        #0d0f14;
+      --surface:   #161920;
+      --border:    #252932;
+      --text:      #e8eaf0;
+      --muted:     #6b7280;
+      --accent:    #f97316;          /* Bazaar orange */
+      --pass:      #22c55e;
+      --fail:      #ef4444;
+      --skip:      #6b7280;
+      --pass-dim:  rgba(34,197,94,.15);
+      --fail-dim:  rgba(239,68,68,.15);
+      --radius:    8px;
+      --font:      'Inter', system-ui, sans-serif;
+    }
+
+    /* ── Reset ──────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 14px; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Layout ─────────────────────────────────────────────────── */
+    .shell {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px 64px;
+    }
+
+    /* ── Header ─────────────────────────────────────────────────── */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 0 20px;
+      border-bottom: 1px solid var(--border);
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo-lockup {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-mark {
+      width: 36px; height: 36px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: grid; place-items: center;
+      font-weight: 800; font-size: 18px; color: #fff;
+      letter-spacing: -.5px;
+    }
+    .logo-text { font-size: 15px; font-weight: 600; color: var(--text); }
+    .logo-sub  { font-size: 11px; color: var(--muted); margin-top: 1px; }
+    .header-meta { font-size: 12px; color: var(--muted); text-align: right; }
+    #last-run-time { color: var(--text); font-weight: 500; }
+
+    /* ── KPI row ────────────────────────────────────────────────── */
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+    }
+    .kpi {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+    }
+    .kpi-label { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; }
+    .kpi-value { font-size: 28px; font-weight: 700; line-height: 1; }
+    .kpi-value.green { color: var(--pass); }
+    .kpi-value.red   { color: var(--fail); }
+    .kpi-value.orange{ color: var(--accent); }
+    .kpi-value.white { color: var(--text); }
+
+    /* ── Filters bar ─────────────────────────────────────────────── */
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .filter-label { font-size: 12px; color: var(--muted); margin-right: 4px; }
+    .chip {
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-size: 12px;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .chip:hover { border-color: var(--accent); color: var(--accent); }
+    .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    /* ── Table wrapper ───────────────────────────────────────────── */
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      min-width: 700px;
+    }
+
+    /* sticky first column */
+    th:first-child,
+    td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      background: var(--surface);
+    }
+
+    thead th {
+      padding: 10px 14px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    thead th:first-child { text-align: left; min-width: 260px; }
+
+    /* Run header columns */
+    .run-header { cursor: default; }
+    .run-date   { display: block; color: var(--text); font-weight: 600; font-size: 11px; }
+    .run-time   { display: block; color: var(--muted); font-size: 10px; margin-top: 2px; }
+    .run-score  { display: block; font-size: 10px; margin-top: 4px; }
+    .run-score.all-pass  { color: var(--pass); }
+    .run-score.has-fails { color: var(--fail); }
+
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background .1s;
+    }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover td { background: rgba(255,255,255,.03); }
+    tbody tr:hover td:first-child { background: #1b1e26; }
+
+    /* Row label cell */
+    .test-name {
+      padding: 9px 14px;
+      text-align: left;
+      max-width: 300px;
+    }
+    .test-suite  { font-size: 10px; color: var(--muted); margin-bottom: 2px; }
+    .test-title  { color: var(--text); font-weight: 500; line-height: 1.3; }
+    .test-project{
+      display: inline-block;
+      margin-top: 3px;
+      font-size: 10px;
+      padding: 1px 6px;
+      border-radius: 10px;
+      background: var(--border);
+      color: var(--muted);
+    }
+
+    /* Result cells */
+    .result-cell {
+      padding: 6px 8px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .dot {
+      display: inline-block;
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      line-height: 20px;
+      font-size: 10px;
+      font-weight: 700;
+      cursor: default;
+    }
+    .dot.pass  { background: var(--pass-dim); color: var(--pass); }
+    .dot.fail  { background: var(--fail-dim); color: var(--fail); }
+    .dot.skip  { background: rgba(107,114,128,.1); color: var(--skip); }
+    .dot.none  { background: transparent; color: var(--border); }
+
+    /* ── Section headers ─────────────────────────────────────────── */
+    .suite-row td {
+      padding: 8px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--accent);
+      background: rgba(249,115,22,.06) !important;
+    }
+
+    /* ── Trend chart ─────────────────────────────────────────────── */
+    .trend-section {
+      margin-top: 32px;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 16px;
+    }
+    .trend-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+    }
+    #trend-chart {
+      width: 100%;
+      height: 120px;
+      display: block;
+    }
+
+    /* ── Legend ──────────────────────────────────────────────────── */
+    .legend {
+      display: flex;
+      gap: 20px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 11px; color: var(--muted);
+    }
+    .legend-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+    }
+
+    /* ── Empty state ─────────────────────────────────────────────── */
+    .empty {
+      padding: 48px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ── Tooltip ─────────────────────────────────────────────────── */
+    #tooltip {
+      position: fixed;
+      pointer-events: none;
+      background: #1e2230;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 12px;
+      color: var(--text);
+      z-index: 1000;
+      display: none;
+      max-width: 280px;
+      line-height: 1.5;
+      box-shadow: 0 8px 24px rgba(0,0,0,.4);
+    }
+
+    @media (max-width: 600px) {
+      .kpi-value { font-size: 22px; }
+      header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+<div class="shell">
+
+  <!-- ── Header ───────────────────────────────────────────────────── -->
+  <header>
+    <div class="logo-lockup">
+      <div class="logo-mark">B</div>
+      <div>
+        <div class="logo-text">Bazaar Printing</div>
+        <div class="logo-sub">E2E Test Dashboard</div>
+      </div>
+    </div>
+    <div class="header-meta">
+      Last run: <span id="last-run-time">—</span><br>
+      Auto-refreshes every 10 min
+    </div>
+  </header>
+
+  <!-- ── KPIs ─────────────────────────────────────────────────────── -->
+  <div class="kpi-row">
+    <div class="kpi">
+      <div class="kpi-label">Total Tests</div>
+      <div class="kpi-value white" id="kpi-total">—</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Passed (latest)</div>
+      <div class="kpi-value green" id="kpi-passed">—</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Failed (latest)</div>
+      <div class="kpi-value red" id="kpi-failed">—</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Pass Rate</div>
+      <div class="kpi-value orange" id="kpi-rate">—</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Total Runs</div>
+      <div class="kpi-value white" id="kpi-runs">—</div>
+    </div>
+  </div>
+
+  <!-- ── Filters ───────────────────────────────────────────────────── -->
+  <div class="filters">
+    <span class="filter-label">Project:</span>
+    <button class="chip active" data-filter="all">All devices</button>
+    <button class="chip" data-filter="desktop-chrome">Chrome</button>
+    <button class="chip" data-filter="desktop-firefox">Firefox</button>
+    <button class="chip" data-filter="desktop-safari">Safari</button>
+    <button class="chip" data-filter="mobile-ios">iOS</button>
+    <button class="chip" data-filter="mobile-android">Android</button>
+    <button class="chip" data-filter="mobile-ipad">iPad</button>
+  </div>
+
+  <!-- ── Matrix table ─────────────────────────────────────────────── -->
+  <div class="table-wrap">
+    <table id="matrix-table">
+      <thead id="matrix-head"></thead>
+      <tbody id="matrix-body"></tbody>
+    </table>
+    <div class="empty" id="empty-state" style="display:none">No test history found. Run tests first.</div>
+  </div>
+
+  <!-- ── Trend chart ───────────────────────────────────────────────── -->
+  <div class="trend-section">
+    <div class="section-title">Pass rate over time</div>
+    <div class="trend-wrap">
+      <canvas id="trend-chart"></canvas>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:var(--pass)"></div> Passed</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--fail)"></div> Failed</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /shell -->
+
+<div id="tooltip"></div>
+
+<script>
+(function () {
+  // ── Data source ──────────────────────────────────────────────────
+  const history = (window.BAZAAR_TEST_HISTORY || [])
+    .sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+
+  if (!history.length) {
+    document.getElementById('empty-state').style.display = 'block';
+    document.getElementById('matrix-table').style.display = 'none';
+    return;
+  }
+
+  // ── State ──────────────────────────────────────────────────────
+  let activeFilter = 'all';
+
+  // ── Helpers ───────────────────────────────────────────────────
+  function fmtDate(iso) {
+    const d = new Date(iso);
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  }
+  function fmtTime(iso) {
+    const d = new Date(iso);
+    return d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+  }
+  function fmtDateTime(iso) {
+    return fmtDate(iso) + ' ' + fmtTime(iso);
+  }
+
+  // ── KPIs from latest run ───────────────────────────────────────
+  const latest = history[history.length - 1];
+  document.getElementById('last-run-time').textContent = fmtDateTime(latest.timestamp);
+  document.getElementById('kpi-total').textContent  = latest.totalTests;
+  document.getElementById('kpi-passed').textContent = latest.passed;
+  document.getElementById('kpi-failed').textContent = latest.failed;
+  document.getElementById('kpi-rate').textContent   =
+    Math.round((latest.passed / latest.totalTests) * 100) + '%';
+  document.getElementById('kpi-runs').textContent   = history.length;
+
+  // ── Build test universe (unique test IDs) ─────────────────────
+  function getFilteredTests(filter) {
+    const allIds = new Map(); // id → {suite, title, project}
+    for (const run of history) {
+      for (const t of run.tests) {
+        if (filter !== 'all' && t.project !== filter) continue;
+        if (!allIds.has(t.id)) {
+          allIds.set(t.id, { suite: t.suite, title: t.title, project: t.project });
+        }
+      }
+    }
+    return allIds;
+  }
+
+  // ── Render ────────────────────────────────────────────────────
+  function render() {
+    const testMap = getFilteredTests(activeFilter);
+    if (!testMap.size) {
+      document.getElementById('matrix-body').innerHTML =
+        '<tr><td colspan="999" style="padding:24px;text-align:center;color:var(--muted)">No tests match this filter.</td></tr>';
+      return;
+    }
+
+    // Group tests by suite
+    const suites = new Map();
+    for (const [id, info] of testMap) {
+      const s = info.suite || 'General';
+      if (!suites.has(s)) suites.set(s, []);
+      suites.get(s).push([id, info]);
+    }
+
+    // ── Head ──────────────────────────────────────────────────
+    const head = document.getElementById('matrix-head');
+    let headHTML = '<tr><th>Test</th>';
+    for (const run of history) {
+      const passRate = Math.round((run.passed / run.totalTests) * 100);
+      const cls = run.failed === 0 ? 'all-pass' : 'has-fails';
+      headHTML += `
+        <th class="run-header" title="Run ${run.runId}">
+          <span class="run-date">${fmtDate(run.timestamp)}</span>
+          <span class="run-time">${fmtTime(run.timestamp)}</span>
+          <span class="run-score ${cls}">${passRate}%</span>
+        </th>`;
+    }
+    head.innerHTML = headHTML + '</tr>';
+
+    // ── Body ──────────────────────────────────────────────────
+    const body = document.getElementById('matrix-body');
+    let bodyHTML = '';
+
+    for (const [suiteName, tests] of suites) {
+      // Suite row
+      bodyHTML += `<tr class="suite-row"><td colspan="${history.length + 1}">${suiteName}</td></tr>`;
+
+      for (const [id, info] of tests) {
+        bodyHTML += '<tr>';
+        bodyHTML += `
+          <td class="test-name">
+            <div class="test-title">${escHtml(info.title)}</div>
+            <span class="test-project">${escHtml(info.project)}</span>
+          </td>`;
+
+        for (const run of history) {
+          const t = run.tests.find(x => x.id === id);
+          let dotCls = 'none', dotTxt = '·', tip = 'No data for this run';
+          if (t) {
+            if (t.status === 'passed')  { dotCls = 'pass'; dotTxt = '✓'; tip = `✓ Passed in ${(t.duration/1000).toFixed(1)}s`; }
+            if (t.status === 'failed')  { dotCls = 'fail'; dotTxt = '✗'; tip = `✗ Failed — ${fmtDateTime(run.timestamp)}`; }
+            if (t.status === 'skipped') { dotCls = 'skip'; dotTxt = '–'; tip = `– Skipped`; }
+          }
+          bodyHTML += `
+            <td class="result-cell">
+              <span class="dot ${dotCls}" data-tip="${escHtml(tip)}\n${escHtml(info.title)}\n${fmtDateTime(run.timestamp)}">${dotTxt}</span>
+            </td>`;
+        }
+        bodyHTML += '</tr>';
+      }
+    }
+    body.innerHTML = bodyHTML;
+
+    // Tooltips
+    const tooltip = document.getElementById('tooltip');
+    body.querySelectorAll('[data-tip]').forEach(el => {
+      el.addEventListener('mouseenter', e => {
+        tooltip.textContent = e.currentTarget.dataset.tip.replace(/\\n/g, '\n');
+        tooltip.style.display = 'block';
+      });
+      el.addEventListener('mousemove', e => {
+        tooltip.style.left = (e.clientX + 12) + 'px';
+        tooltip.style.top  = (e.clientY + 12) + 'px';
+      });
+      el.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+      });
+    });
+  }
+
+  function escHtml(s) {
+    return String(s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // ── Filter chips ──────────────────────────────────────────────
+  document.querySelectorAll('.chip[data-filter]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      render();
+    });
+  });
+
+  // ── Trend chart ───────────────────────────────────────────────
+  function drawTrend() {
+    const canvas = document.getElementById('trend-chart');
+    const ctx = canvas.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    canvas.width  = rect.width  * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.scale(dpr, dpr);
+    const W = rect.width, H = rect.height;
+    const pad = { t: 10, r: 20, b: 28, l: 36 };
+    const innerW = W - pad.l - pad.r;
+    const innerH = H - pad.t - pad.b;
+
+    if (history.length < 2) return;
+
+    const maxTotal = Math.max(...history.map(r => r.totalTests));
+    const xStep = innerW / (history.length - 1);
+
+    function yFor(val) {
+      return pad.t + innerH - (val / maxTotal) * innerH;
+    }
+    function xFor(i) {
+      return pad.l + i * xStep;
+    }
+
+    // Grid lines
+    ctx.strokeStyle = 'rgba(255,255,255,.05)';
+    ctx.lineWidth = 1;
+    [0, 0.25, 0.5, 0.75, 1].forEach(f => {
+      const y = pad.t + innerH * (1 - f);
+      ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(W - pad.r, y); ctx.stroke();
+      ctx.fillStyle = 'rgba(107,114,128,.6)';
+      ctx.font = '10px system-ui';
+      ctx.fillText(Math.round(f * maxTotal), 2, y + 4);
+    });
+
+    // Failed area (background)
+    ctx.beginPath();
+    ctx.moveTo(xFor(0), yFor(history[0].failed));
+    history.forEach((r, i) => ctx.lineTo(xFor(i), yFor(r.failed)));
+    ctx.lineTo(xFor(history.length - 1), yFor(0));
+    ctx.lineTo(xFor(0), yFor(0));
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(239,68,68,.12)';
+    ctx.fill();
+
+    // Passed area
+    ctx.beginPath();
+    ctx.moveTo(xFor(0), yFor(history[0].passed));
+    history.forEach((r, i) => ctx.lineTo(xFor(i), yFor(r.passed)));
+    ctx.lineTo(xFor(history.length - 1), yFor(0));
+    ctx.lineTo(xFor(0), yFor(0));
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(34,197,94,.12)';
+    ctx.fill();
+
+    // Passed line
+    ctx.beginPath();
+    history.forEach((r, i) => {
+      i === 0 ? ctx.moveTo(xFor(i), yFor(r.passed)) : ctx.lineTo(xFor(i), yFor(r.passed));
+    });
+    ctx.strokeStyle = '#22c55e';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Failed line
+    ctx.beginPath();
+    history.forEach((r, i) => {
+      i === 0 ? ctx.moveTo(xFor(i), yFor(r.failed)) : ctx.lineTo(xFor(i), yFor(r.failed));
+    });
+    ctx.strokeStyle = '#ef4444';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // X-axis labels
+    ctx.fillStyle = 'rgba(107,114,128,.8)';
+    ctx.font = '10px system-ui';
+    ctx.textAlign = 'center';
+    history.forEach((r, i) => {
+      ctx.fillText(fmtDate(r.timestamp), xFor(i), H - 6);
+    });
+
+    // Dots
+    history.forEach((r, i) => {
+      [[r.passed, '#22c55e'], [r.failed, '#ef4444']].forEach(([val, color]) => {
+        ctx.beginPath();
+        ctx.arc(xFor(i), yFor(val), 3.5, 0, Math.PI * 2);
+        ctx.fillStyle = color;
+        ctx.fill();
+      });
+    });
+  }
+
+  // Initial render
+  render();
+  requestAnimationFrame(drawTrend);
+  window.addEventListener('resize', () => requestAnimationFrame(drawTrend));
+
+  // Auto-refresh every 10 min
+  setTimeout(() => location.reload(), 10 * 60 * 1000);
+})();
+</script>
+</body>
+</html>

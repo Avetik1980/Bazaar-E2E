@@ -1,0 +1,18 @@
+{
+  "name": "bazaar-printing-e2e",
+  "version": "1.0.0",
+  "description": "E2E test suite for bazaarprinting.com — desktop + mobile",
+  "scripts": {
+    "test": "playwright test",
+    "test:desktop": "playwright test --project=desktop-chrome --project=desktop-firefox --project=desktop-safari",
+    "test:mobile": "playwright test --project=mobile-ios --project=mobile-android --project=mobile-ipad",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "collect-results": "node scripts/collect-results.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.0.0"
+  }
+}
