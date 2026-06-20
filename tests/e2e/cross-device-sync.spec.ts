@@ -83,8 +83,8 @@ test.describe('[Sync] Homepage content', () => {
     const home = new HomePage(page);
     await home.open();
     await scrollFullPage(page);
-    await expect(home.footerPhone).toBeVisible();
-    await expect(home.footerEmail).toBeVisible();
+    await expect(page.getByRole('contentinfo').getByRole('link', { name: '(+1) 747 348' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'info@bazaarprinting.com' })).toBeVisible();
   });
 });
 

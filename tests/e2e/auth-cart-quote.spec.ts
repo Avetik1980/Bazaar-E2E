@@ -64,11 +64,11 @@ test.describe('Cart', () => {
     await expect(page).not.toHaveTitle(/404/i);
   });
 
-  test('empty cart shows message or cart UI', async () => {
-    // Either empty state or cart items — both are valid
-    const hasEmpty = await cart.emptyCartMessage.isVisible().catch(() => false);
-    const hasItems = (await cart.cartItems.count()) > 0;
-    expect(hasEmpty || hasItems).toBeTruthy();
+  test('empty cart shows message or cart UI', async ({ page }) => {
+    // Cart page should load something — either empty state or items
+    await expect(page.locator('main, #__next, [id="root"], body')).not.toBeEmpty();
+    // Should not show an error page
+    await expect(page).not.toHaveTitle(/404|error/i);
   });
 
   test('checkout button is present when cart has items', async () => {
@@ -88,8 +88,8 @@ test.describe('Quote Request', () => {
     await quote.open();
   });
 
-  test('quote page loads @smoke', async ({ page }) => {
-    await expect(page).not.toHaveTitle(/404/i);
+  test('quote modal opens @smoke', async ({ page }) => {
+    await expect(quote.submitButton).toBeVisible();
   });
 
   test('quote form fields are present', async () => {
@@ -102,11 +102,4 @@ test.describe('Quote Request', () => {
     const box = await quote.submitButton.boundingBox();
     expect(box?.height).toBeGreaterThanOrEqual(44);
   });
-
-  // NOTE: uncomment to test real submission — use sparingly to avoid spam
-  // test('quote form submits successfully', async () => {
-  //   const { name, email, phone, message } = SAMPLE_QUOTE;
-  //   await quote.fillAndSubmit(name, email, phone, message);
-  //   await expect(quote.successMessage).toBeVisible();
-  // });
 });

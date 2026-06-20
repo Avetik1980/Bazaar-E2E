@@ -39,7 +39,7 @@ test.describe('Homepage', () => {
     const mobile = await isMobileViewport(page);
     if (mobile) test.skip();
 
-    const labels = page.locator('nav a:has-text("Labels & Stickers")').first();
+    const labels = page.getByRole('link', { name: 'Labels & Stickers' }).first();
     await expect(labels).toBeVisible();
   });
 
@@ -83,8 +83,9 @@ test.describe('Homepage', () => {
 
   test('footer phone number is correct', async () => {
     await scrollFullPage(home.page);
-    const href = await home.footerPhone.getAttribute('href');
-    expect(href).toContain('17473484444');
+    await expect(home.footerPhone).toBeVisible();
+    const text = await home.footerPhone.textContent();
+    expect(text).toContain('747 348 4444');
   });
 
   // ─── Responsive visual parity ─────────────────────────────────────

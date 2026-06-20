@@ -20,11 +20,11 @@ export class HomePage extends BasePage {
     }
 
     get shopPackagingCTA(): Locator {
-        return this.page.locator('a[href*="/shop"]:visible').first();
+        return this.page.getByRole('link', {name: 'SHOP', exact: true});
     }
 
     get getAQuoteCTA(): Locator {
-        return this.page.locator('button:has-text("Request Pricing"):visible').first();
+        return this.page.getByRole('button', {name: 'Request Pricing'});
     }
 
     // ─── Category cards ───────────────────────────────────────────────
@@ -63,14 +63,14 @@ export class HomePage extends BasePage {
 
     // ─── Footer ───────────────────────────────────────────────────────
     get footerPhone(): Locator {
-        return this.page.locator('footer a[href^="tel:"]');
+        return this.page.getByRole('contentinfo').getByRole('link', {name: '(+1) 747 348'});
     }
 
     get footerEmail(): Locator {
-        return this.page.locator('footer a[href^="mailto:"]');
+        return this.page.getByRole('link', {name: 'info@bazaarprinting.com'});
     }
 
     get footerAddress(): Locator {
-        return this.page.locator('footer a[href*="maps"]');
+        return this.page.getByRole('link', {name: 'Boyd St, Los Angeles, CA 90013'});
     }
 }
