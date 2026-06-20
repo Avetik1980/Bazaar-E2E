@@ -6,9 +6,9 @@ on:
     - cron: '0 */6 * * *'    # Every 6 hours
     - cron: '0 9 * * 1-5'    # Weekdays at 9 AM UTC (2 AM LA time)
 
-  # ─── On every push to main ────────────────────────────────────────
+  # ─── On every push to master ────────────────────────────────────────
   push:
-    branches: [main]
+    branches: [master]
 
   # ─── Manual trigger from GitHub UI ───────────────────────────────
   workflow_dispatch:
