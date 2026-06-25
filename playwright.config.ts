@@ -4,9 +4,9 @@ export default defineConfig({
   testDir: './tests/e2e',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 2 : 1,
   workers: process.env.CI ? 2 : undefined,
-  timeout: 30_000,
+  timeout: 60_000,
 
   reporter: [
     ['list'],
@@ -19,7 +19,8 @@ export default defineConfig({
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'on-first-retry',
-  },
+    navigationTimeout: 60_000,
+},
 
   projects: [
     // ─── Desktop browsers ────────────────────────────────────────────

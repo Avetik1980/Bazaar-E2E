@@ -15,34 +15,11 @@ export class CartPage extends BasePage {
     }
 
     get emptyCartMessage(): Locator {
-        return this.page.locator('text=/empty|no items/i');
+        return this.page.locator('text=/Cart\\s*0\\s*Items/i').first();
     }
 
     get checkoutButton(): Locator {
         return this.page.locator('button:has-text("Checkout"), a:has-text("Checkout")').first();
-    }
-
-    get totalPrice(): Locator {
-        return this.page.locator('[data-testid="cart-total"], .cart-total, [class*="total"]').first();
-    }
-
-    async getItemCount(): Promise<number> {
-        return this.cartItems.count();
-    }
-
-    async removeFirstItem() {
-        const removeBtn = this.cartItems.first().locator('button:has-text("Remove"), button[aria-label*="remove"]');
-        await removeBtn.click();
-        await this.page.waitForTimeout(500);
-    }
-
-    async updateQuantity(itemIndex: number, qty: number) {
-        const item = this.cartItems.nth(itemIndex);
-        const qtyInput = item.locator('input[type="number"]');
-        await qtyInput.clear();
-        await qtyInput.fill(String(qty));
-        await qtyInput.press('Enter');
-        await this.page.waitForTimeout(500);
     }
 }
 
@@ -72,14 +49,14 @@ export class AuthPage extends BasePage {
     }
 
     get registerLink(): Locator {
-        return this.page.getByRole('button', {name: 'Create Account'});
+        return this.page.getByTestId('register-link');
     }
 
     async signIn(email: string, password: string) {
         await this.emailInput.fill(email);
         await this.passwordInput.fill(password);
         await this.signInButton.click();
-        await this.page.waitForLoadState('networkidle');
+        await this.page.waitForLoadState('domcontentloaded');
     }
 }
 
@@ -90,55 +67,46 @@ export class QuotePage extends BasePage {
 
     async open() {
         await this.goto('/bazaarprinting');
-        // Try carousel link first, fall back to scrolling to Request Pricing button
-        const carouselLink = this.page.getByRole('link', {name: 'Get a Quote'});
-        const mobileLink = this.page.getByRole('link', {name: 'GET QUOTE'});
-        const requestBtn = this.page.getByRole('button', {name: 'Request Pricing'});
+        await this.page.waitForTimeout(1200);
 
-        const carouselVisible = await carouselLink.isVisible().catch(() => false);
-        const mobileVisible = await mobileLink.isVisible().catch(() => false);
+        const carouselLink       = this.page.getByRole('link', {name: 'Get a Quote'});
+        const carouselMobileLink = this.page.getByRole('link', {name: 'GET A QUOTE'});
+        const requestBtn         = this.page.getByRole('button', {name: 'Request Pricing'});
+        const requestLink        = this.page.getByRole('link', {name: 'Request Pricing'});
+
+        const carouselVisible       = await carouselLink.isVisible().catch(() => false);
+        const carouselMobileVisible = await carouselMobileLink.isVisible().catch(() => false);
+        const btnVisible            = await requestBtn.isVisible().catch(() => false);
+        const linkVisible           = await requestLink.isVisible().catch(() => false);
 
         if (carouselVisible) {
             await carouselLink.click();
-        } else if (mobileVisible) {
-            await mobileLink.click();
-        } else {
+        } else if (carouselMobileVisible) {
+            await carouselMobileLink.click();
+        } else if (btnVisible) {
             await requestBtn.scrollIntoViewIfNeeded();
             await requestBtn.click();
+        } else if (linkVisible) {
+            await requestLink.scrollIntoViewIfNeeded();
+            await requestLink.click();
         }
-        await this.page.waitForTimeout(800);
+
+        await this.page.waitForTimeout(1200);
     }
 
     get nameInput(): Locator {
-        return this.page.getByRole('textbox', {name: 'Full Name'});
+        return this.page.getByLabel('FULL NAME');
     }
 
     get emailInput(): Locator {
-        return this.page.getByRole('textbox', {name: 'Email *'});
+        return this.page.locator('input[placeholder="Type here"]').nth(2);
     }
 
     get phoneInput(): Locator {
-        return this.page.getByRole('textbox', {name: 'Phone'});
-    }
-
-    get messageInput(): Locator {
-        return this.page.locator('textarea').first();
+        return this.page.getByLabel('CONTACT NUMBER');
     }
 
     get submitButton(): Locator {
-        return this.page.getByRole('button', {name: 'Send Quote Request'});
-    }
-
-    get successMessage(): Locator {
-        return this.page.locator('text=/thank you|submitted|success/i').first();
-    }
-
-    async fillAndSubmit(name: string, email: string, phone: string, message: string) {
-        await this.nameInput.fill(name);
-        await this.emailInput.fill(email);
-        await this.phoneInput.fill(phone);
-        await this.messageInput.fill(message);
-        await this.submitButton.click();
-        await this.page.waitForLoadState('domcontentloaded');
+        return this.page.getByRole('button', {name: /submit|send|request/i}).last();
     }
 }

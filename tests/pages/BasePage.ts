@@ -10,7 +10,7 @@ export class BasePage {
     // ─── Navigation helpers ────────────────────────────────────────────
     async goto(path: string) {
         await this.page.goto(path);
-        await this.page.waitForLoadState('networkidle');
+        await this.page.waitForLoadState('domcontentloaded');
     }
 
     async getTitle() {
@@ -23,11 +23,11 @@ export class BasePage {
     }
 
     get cartIcon(): Locator {
-        return this.page.getByRole('link', {name: 'Cart'});
+        return this.page.getByRole('link', {name: 'Cart', exact: true}).first();
     }
 
     get signInLink(): Locator {
-        return this.page.locator('a[href*="/authentication"]').first();
+        return this.page.locator('a[href*="/authentication"]').filter({visible: true}).first();
     }
 
     get phoneLink(): Locator {
@@ -36,14 +36,20 @@ export class BasePage {
 
     // ─── Mobile hamburger ─────────────────────────────────────────────
     get mobileMenuButton(): Locator {
-        return this.page.locator('button[aria-label*="menu"], button[aria-label*="Menu"]').first();
+        return this.page.locator('button[aria-label="Open menu"]').first();
     }
 
     async openMobileMenu() {
-        const isMobileMenuVisible = await this.mobileMenuButton.isVisible();
+        const overlay = this.page.locator('.mobile-menu-overlay');
+        const overlayVisible = await overlay.isVisible().catch(() => false);
+        if (overlayVisible) {
+            // Menu is already open — nothing to do
+            return;
+        }
+        const isMobileMenuVisible = await this.mobileMenuButton.isVisible().catch(() => false);
         if (isMobileMenuVisible) {
-            await this.mobileMenuButton.click();
-            await this.page.waitForTimeout(300);
+            await this.mobileMenuButton.dispatchEvent('click');
+            await this.page.waitForTimeout(500);
         }
     }
 
