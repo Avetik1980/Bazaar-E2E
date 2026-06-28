@@ -69,7 +69,7 @@ export class QuotePage extends BasePage {
         await this.goto('/bazaarprinting');
 // CI Android emulators are slower — give carousel more time to hydrate
         const isSlowEnv = !!process.env.CI;
-        await this.page.waitForTimeout(isSlowEnv ? 4000 : 2500);
+        await this.page.waitForTimeout(isSlowEnv ? 6000 : 2500);
 
         const carouselLink = this.page.getByRole('link', {name: 'Get a Quote'});
         const carouselMobileLink = this.page.getByRole('link', {name: 'GET A QUOTE'});
