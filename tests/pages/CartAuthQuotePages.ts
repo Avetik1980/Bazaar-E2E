@@ -67,17 +67,19 @@ export class QuotePage extends BasePage {
 
     async open() {
         await this.goto('/bazaarprinting');
-        await this.page.waitForTimeout(2500);
+// CI Android emulators are slower — give carousel more time to hydrate
+        const isSlowEnv = !!process.env.CI;
+        await this.page.waitForTimeout(isSlowEnv ? 4000 : 2500);
 
-        const carouselLink       = this.page.getByRole('link', {name: 'Get a Quote'});
+        const carouselLink = this.page.getByRole('link', {name: 'Get a Quote'});
         const carouselMobileLink = this.page.getByRole('link', {name: 'GET A QUOTE'});
-        const requestBtn         = this.page.getByRole('button', {name: 'Request Pricing'});
-        const requestLink        = this.page.getByRole('link', {name: 'Request Pricing'});
+        const requestBtn = this.page.getByRole('button', {name: 'Request Pricing'});
+        const requestLink = this.page.getByRole('link', {name: 'Request Pricing'});
 
-        const carouselVisible       = await carouselLink.isVisible().catch(() => false);
+        const carouselVisible = await carouselLink.isVisible().catch(() => false);
         const carouselMobileVisible = await carouselMobileLink.isVisible().catch(() => false);
-        const btnVisible            = await requestBtn.isVisible().catch(() => false);
-        const linkVisible           = await requestLink.isVisible().catch(() => false);
+        const btnVisible = await requestBtn.isVisible().catch(() => false);
+        const linkVisible = await requestLink.isVisible().catch(() => false);
 
         if (carouselVisible) {
             await carouselLink.click();
