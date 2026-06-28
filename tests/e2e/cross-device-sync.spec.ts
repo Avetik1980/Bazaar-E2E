@@ -100,6 +100,9 @@ test.describe('[Sync] Category pages', () => {
     test('labels-stickers shows at least 1 product on all devices', async ({page}) => {
         const category = new CategoryPage(page);
         await category.open('labels-stickers');
+// Wait for at least 1 product link to appear before counting
+        await category.productLinks.first().waitFor({state: 'visible', timeout: 15000}).catch(() => {
+        });
         const count = await category.productLinks.count();
         expect(count).toBeGreaterThan(0);
     });
