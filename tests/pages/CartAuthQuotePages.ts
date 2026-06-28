@@ -67,7 +67,7 @@ export class QuotePage extends BasePage {
 
     async open() {
         await this.goto('/bazaarprinting');
-        await this.page.waitForTimeout(1200);
+        await this.page.waitForTimeout(2500);
 
         const carouselLink       = this.page.getByRole('link', {name: 'Get a Quote'});
         const carouselMobileLink = this.page.getByRole('link', {name: 'GET A QUOTE'});
