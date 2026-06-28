@@ -67,20 +67,29 @@ export class QuotePage extends BasePage {
 
     async open() {
         await this.goto('/bazaarprinting');
-// CI Android emulators are slower — give carousel more time to hydrate
-        const isSlowEnv = !!process.env.CI;
-        await this.page.waitForTimeout(isSlowEnv ? 6000 : 2500);
 
         const carouselLink = this.page.getByRole('link', {name: 'Get a Quote'});
         const carouselMobileLink = this.page.getByRole('link', {name: 'GET A QUOTE'});
         const requestBtn = this.page.getByRole('button', {name: 'Request Pricing'});
         const requestLink = this.page.getByRole('link', {name: 'Request Pricing'});
 
+// Wait for any quote CTA to appear — poll every 500ms up to 15s
+        const deadline = Date.now() + 15000;
+        while (Date.now() < deadline) {
+            const any = await Promise.race([
+                carouselLink.isVisible().catch(() => false),
+                carouselMobileLink.isVisible().catch(() => false),
+                requestBtn.isVisible().catch(() => false),
+                requestLink.isVisible().catch(() => false),
+            ]);
+            if (any) break;
+            await this.page.waitForTimeout(500);
+        }
+
         const carouselVisible = await carouselLink.isVisible().catch(() => false);
         const carouselMobileVisible = await carouselMobileLink.isVisible().catch(() => false);
         const btnVisible = await requestBtn.isVisible().catch(() => false);
         const linkVisible = await requestLink.isVisible().catch(() => false);
-
         if (carouselVisible) {
             await carouselLink.click();
         } else if (carouselMobileVisible) {
