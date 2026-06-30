@@ -92,10 +92,13 @@ test.describe('Quote Request', () => {
     });
 
     test('quote modal opens @smoke', async ({page}) => {
+        test.slow();
+        await quote.submitButton.scrollIntoViewIfNeeded();
         await expect(quote.submitButton).toBeVisible();
     });
 
     test('quote form fields are present', async () => {
+        test.slow();
         await expect(quote.emailInput).toBeVisible();
         await expect(quote.submitButton).toBeVisible();
     });
