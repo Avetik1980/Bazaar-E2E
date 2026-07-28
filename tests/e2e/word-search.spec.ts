@@ -1,5 +1,4 @@
 import {test, expect} from '@playwright/test';
-import {chromium, Browser, Page} from '@playwright/test';
 
 // ─── CONFIGURE YOUR SEARCH HERE ───────────────────────────────────
 const SEARCH_TERM = 'cannabis'; // <-- change this to any word/string
@@ -88,7 +87,14 @@ test.describe('Word Search', () => {
         }
         console.log('═══════════════════════════════════════\n');
 
-        // Test always passes — it's a reporting tool, not a gate
+        // Embed result in test title for dashboard visibility
+        test.info().annotations.push({
+            type: 'Word Search Result',
+            description: totalOccurrences === 0
+                ? `"${SEARCH_TERM}" not found on any page (${visited.size} pages scanned)`
+                : `"${SEARCH_TERM}" found ${totalOccurrences}x across ${matches.length} page(s): ${matches.map(m => `${m.url} (${m.count}x)`).join(' | ')}`
+        });
+
         expect(true).toBe(true);
     });
 });
