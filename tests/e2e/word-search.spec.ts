@@ -95,6 +95,15 @@ test.describe('Word Search', () => {
                 : `"${SEARCH_TERM}" found ${totalOccurrences}x across ${matches.length} page(s): ${matches.map(m => `${m.url} (${m.count}x)`).join(' | ')}`
         });
 
+        await test.step(`RESULT: "${SEARCH_TERM}" found ${totalOccurrences}x on ${matches.length} page(s)`, async () => {
+            if (totalOccurrences > 0) {
+                for (const match of matches) {
+                    await test.step(`[${match.count}x] ${match.url}`, async () => {
+                    });
+                }
+            }
+        });
+
         expect(true).toBe(true);
     });
 });
