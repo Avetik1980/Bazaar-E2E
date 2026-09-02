@@ -1,11 +1,11 @@
 [
   {
-    "runId": "1788357863959",
-    "timestamp": "2026-09-02T14:04:23.959Z",
-    "totalTests": 579,
-    "passed": 488,
-    "failed": 17,
-    "skipped": 67,
+    "runId": "1788369443051",
+    "timestamp": "2026-09-02T17:17:23.051Z",
+    "totalTests": 390,
+    "passed": 305,
+    "failed": 30,
+    "skipped": 40,
     "tests": [
       {
         "id": "desktop-chrome::Authentication::sign in page loads @smoke",
@@ -13,7 +13,7 @@
         "title": "sign in page loads @smoke",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1310
+        "duration": 1459
       },
       {
         "id": "desktop-chrome::Authentication::sign in button is present",
@@ -21,7 +21,7 @@
         "title": "sign in button is present",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1203
+        "duration": 1374
       },
       {
         "id": "desktop-chrome::Authentication::invalid credentials shows error",
@@ -29,7 +29,7 @@
         "title": "invalid credentials shows error",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1076
+        "duration": 1118
       },
       {
         "id": "desktop-chrome::Authentication::register link is present",
@@ -37,7 +37,7 @@
         "title": "register link is present",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 829
+        "duration": 933
       },
       {
         "id": "desktop-chrome::Authentication::sign in form is usable on mobile",
@@ -45,7 +45,7 @@
         "title": "sign in form is usable on mobile",
         "project": "desktop-chrome",
         "status": "skipped",
-        "duration": 773
+        "duration": 1000
       },
       {
         "id": "desktop-chrome::Authentication::valid credentials redirect away from auth page",
@@ -53,7 +53,7 @@
         "title": "valid credentials redirect away from auth page",
         "project": "desktop-chrome",
         "status": "skipped",
-        "duration": 820
+        "duration": 1073
       },
       {
         "id": "desktop-firefox::Authentication::sign in page loads @smoke",
@@ -61,7 +61,7 @@
         "title": "sign in page loads @smoke",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 2074
+        "duration": 2649
       },
       {
         "id": "desktop-firefox::Authentication::sign in button is present",
@@ -69,7 +69,7 @@
         "title": "sign in button is present",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1174
+        "duration": 1319
       },
       {
         "id": "desktop-firefox::Authentication::invalid credentials shows error",
@@ -77,7 +77,7 @@
         "title": "invalid credentials shows error",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1397
+        "duration": 1564
       },
       {
         "id": "desktop-firefox::Authentication::register link is present",
@@ -85,7 +85,7 @@
         "title": "register link is present",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1200
+        "duration": 1479
       },
       {
         "id": "desktop-firefox::Authentication::sign in form is usable on mobile",
@@ -93,7 +93,7 @@
         "title": "sign in form is usable on mobile",
         "project": "desktop-firefox",
         "status": "skipped",
-        "duration": 1145
+        "duration": 1436
       },
       {
         "id": "desktop-firefox::Authentication::valid credentials redirect away from auth page",
@@ -101,7 +101,7 @@
         "title": "valid credentials redirect away from auth page",
         "project": "desktop-firefox",
         "status": "skipped",
-        "duration": 1153
+        "duration": 1297
       },
       {
         "id": "desktop-safari::Authentication::sign in page loads @smoke",
@@ -109,7 +109,7 @@
         "title": "sign in page loads @smoke",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 8481
+        "duration": 4028
       },
       {
         "id": "desktop-safari::Authentication::sign in button is present",
@@ -117,7 +117,7 @@
         "title": "sign in button is present",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2277
+        "duration": 2093
       },
       {
         "id": "desktop-safari::Authentication::invalid credentials shows error",
@@ -125,7 +125,7 @@
         "title": "invalid credentials shows error",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2022
+        "duration": 2079
       },
       {
         "id": "desktop-safari::Authentication::register link is present",
@@ -133,7 +133,7 @@
         "title": "register link is present",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 1745
+        "duration": 1802
       },
       {
         "id": "desktop-safari::Authentication::sign in form is usable on mobile",
@@ -141,7 +141,7 @@
         "title": "sign in form is usable on mobile",
         "project": "desktop-safari",
         "status": "skipped",
-        "duration": 1848
+        "duration": 1751
       },
       {
         "id": "desktop-safari::Authentication::valid credentials redirect away from auth page",
@@ -149,7 +149,7 @@
         "title": "valid credentials redirect away from auth page",
         "project": "desktop-safari",
         "status": "skipped",
-        "duration": 2113
+        "duration": 1965
       },
       {
         "id": "desktop-chrome::Cart::cart page loads @smoke",
@@ -157,7 +157,7 @@
         "title": "cart page loads @smoke",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 850
+        "duration": 1126
       },
       {
         "id": "desktop-chrome::Cart::empty cart shows message or cart UI",
@@ -165,7 +165,7 @@
         "title": "empty cart shows message or cart UI",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 844
+        "duration": 1111
       },
       {
         "id": "desktop-chrome::Cart::checkout button is present when cart has items",
@@ -173,7 +173,7 @@
         "title": "checkout button is present when cart has items",
         "project": "desktop-chrome",
         "status": "skipped",
-        "duration": 885
+        "duration": 1154
       },
       {
         "id": "desktop-firefox::Cart::cart page loads @smoke",
@@ -181,7 +181,7 @@
         "title": "cart page loads @smoke",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1260
+        "duration": 1505
       },
       {
         "id": "desktop-firefox::Cart::empty cart shows message or cart UI",
@@ -189,7 +189,7 @@
         "title": "empty cart shows message or cart UI",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1197
+        "duration": 1479
       },
       {
         "id": "desktop-firefox::Cart::checkout button is present when cart has items",
@@ -197,7 +197,7 @@
         "title": "checkout button is present when cart has items",
         "project": "desktop-firefox",
         "status": "skipped",
-        "duration": 1277
+        "duration": 1413
       },
       {
         "id": "desktop-safari::Cart::cart page loads @smoke",
@@ -205,7 +205,7 @@
         "title": "cart page loads @smoke",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2819
+        "duration": 1943
       },
       {
         "id": "desktop-safari::Cart::empty cart shows message or cart UI",
@@ -213,7 +213,7 @@
         "title": "empty cart shows message or cart UI",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2953
+        "duration": 2468
       },
       {
         "id": "desktop-safari::Cart::checkout button is present when cart has items",
@@ -221,7 +221,7 @@
         "title": "checkout button is present when cart has items",
         "project": "desktop-safari",
         "status": "skipped",
-        "duration": 3061
+        "duration": 2327
       },
       {
         "id": "desktop-chrome::Quote Request::quote modal opens @smoke",
@@ -229,7 +229,7 @@
         "title": "quote modal opens @smoke",
         "project": "desktop-chrome",
         "status": "timedOut",
-        "duration": 180273
+        "duration": 180233
       },
       {
         "id": "desktop-chrome::Quote Request::quote form fields are present",
@@ -237,7 +237,7 @@
         "title": "quote form fields are present",
         "project": "desktop-chrome",
         "status": "failed",
-        "duration": 22929
+        "duration": 22684
       },
       {
         "id": "desktop-chrome::Quote Request::submit button is tappable on mobile",
@@ -245,7 +245,7 @@
         "title": "submit button is tappable on mobile",
         "project": "desktop-chrome",
         "status": "skipped",
-        "duration": 18453
+        "duration": 17710
       },
       {
         "id": "desktop-firefox::Quote Request::quote modal opens @smoke",
@@ -253,7 +253,7 @@
         "title": "quote modal opens @smoke",
         "project": "desktop-firefox",
         "status": "timedOut",
-        "duration": 181226
+        "duration": 181100
       },
       {
         "id": "desktop-firefox::Quote Request::quote form fields are present",
@@ -261,7 +261,7 @@
         "title": "quote form fields are present",
         "project": "desktop-firefox",
         "status": "failed",
-        "duration": 24089
+        "duration": 23875
       },
       {
         "id": "desktop-firefox::Quote Request::submit button is tappable on mobile",
@@ -269,7 +269,7 @@
         "title": "submit button is tappable on mobile",
         "project": "desktop-firefox",
         "status": "skipped",
-        "duration": 18799
+        "duration": 18979
       },
       {
         "id": "desktop-safari::Quote Request::quote modal opens @smoke",
@@ -277,7 +277,7 @@
         "title": "quote modal opens @smoke",
         "project": "desktop-safari",
         "status": "timedOut",
-        "duration": 181274
+        "duration": 180974
       },
       {
         "id": "desktop-safari::Quote Request::quote form fields are present",
@@ -285,7 +285,7 @@
         "title": "quote form fields are present",
         "project": "desktop-safari",
         "status": "failed",
-        "duration": 25352
+        "duration": 24424
       },
       {
         "id": "desktop-safari::Quote Request::submit button is tappable on mobile",
@@ -293,7 +293,7 @@
         "title": "submit button is tappable on mobile",
         "project": "desktop-safari",
         "status": "skipped",
-        "duration": 19280
+        "duration": 19336
       },
       {
         "id": "desktop-chrome::Category Pages::labels-stickers loads and shows products @smoke",
@@ -301,7 +301,7 @@
         "title": "labels-stickers loads and shows products @smoke",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1281
+        "duration": 1941
       },
       {
         "id": "desktop-chrome::Category Pages::labels-stickers lists Roll Labels",
@@ -309,7 +309,7 @@
         "title": "labels-stickers lists Roll Labels",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1197
+        "duration": 1317
       },
       {
         "id": "desktop-chrome::Category Pages::clicking a product navigates to product page",
@@ -317,7 +317,7 @@
         "title": "clicking a product navigates to product page",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 4745
+        "duration": 4640
       },
       {
         "id": "desktop-chrome::Category Pages::labelsStickers category page loads without errors",
@@ -325,7 +325,7 @@
         "title": "labelsStickers category page loads without errors",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1111
+        "duration": 1245
       },
       {
         "id": "desktop-chrome::Category Pages::packagingBoxes category page loads without errors",
@@ -333,7 +333,7 @@
         "title": "packagingBoxes category page loads without errors",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1649
+        "duration": 1479
       },
       {
         "id": "desktop-chrome::Category Pages::bagsFlexible category page loads without errors",
@@ -341,7 +341,7 @@
         "title": "bagsFlexible category page loads without errors",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1091
+        "duration": 1345
       },
       {
         "id": "desktop-chrome::Category Pages::bannersSign category page loads without errors",
@@ -349,7 +349,7 @@
         "title": "bannersSign category page loads without errors",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1371
+        "duration": 1404
       },
       {
         "id": "desktop-chrome::Category Pages::marketingMaterials category page loads without errors",
@@ -357,7 +357,7 @@
         "title": "marketingMaterials category page loads without errors",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1203
+        "duration": 1374
       },
       {
         "id": "desktop-chrome::Category Pages::tradingCards category page loads without errors",
@@ -365,7 +365,7 @@
         "title": "tradingCards category page loads without errors",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 972
+        "duration": 1092
       },
       {
         "id": "desktop-chrome::Category Pages::wallpapers category page loads without errors",
@@ -373,7 +373,7 @@
         "title": "wallpapers category page loads without errors",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 917
+        "duration": 1184
       },
       {
         "id": "desktop-chrome::Category Pages::apparel category page loads without errors",
@@ -381,7 +381,7 @@
         "title": "apparel category page loads without errors",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1172
+        "duration": 1354
       },
       {
         "id": "desktop-chrome::Category Pages::labelJarCombo category page loads without errors",
@@ -389,7 +389,7 @@
         "title": "labelJarCombo category page loads without errors",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1164
+        "duration": 1271
       },
       {
         "id": "desktop-chrome::Category Pages::material filter ?material=vinyl is accepted by server",
@@ -397,7 +397,7 @@
         "title": "material filter ?material=vinyl is accepted by server",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 2455
+        "duration": 2748
       },
       {
         "id": "desktop-chrome::Category Pages::product list is scrollable on mobile",
@@ -405,7 +405,7 @@
         "title": "product list is scrollable on mobile",
         "project": "desktop-chrome",
         "status": "skipped",
-        "duration": 81
+        "duration": 91
       },
       {
         "id": "desktop-firefox::Category Pages::labels-stickers loads and shows products @smoke",
@@ -413,7 +413,7 @@
         "title": "labels-stickers loads and shows products @smoke",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1453
+        "duration": 1629
       },
       {
         "id": "desktop-firefox::Category Pages::labels-stickers lists Roll Labels",
@@ -421,7 +421,7 @@
         "title": "labels-stickers lists Roll Labels",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1290
+        "duration": 1620
       },
       {
         "id": "desktop-firefox::Category Pages::clicking a product navigates to product page",
@@ -429,7 +429,7 @@
         "title": "clicking a product navigates to product page",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 4574
+        "duration": 4996
       },
       {
         "id": "desktop-firefox::Category Pages::labelsStickers category page loads without errors",
@@ -437,7 +437,7 @@
         "title": "labelsStickers category page loads without errors",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1288
+        "duration": 1508
       },
       {
         "id": "desktop-firefox::Category Pages::packagingBoxes category page loads without errors",
@@ -445,7 +445,7 @@
         "title": "packagingBoxes category page loads without errors",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1647
+        "duration": 1767
       },
       {
         "id": "desktop-firefox::Category Pages::bagsFlexible category page loads without errors",
@@ -453,7 +453,7 @@
         "title": "bagsFlexible category page loads without errors",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1262
+        "duration": 1652
       },
       {
         "id": "desktop-firefox::Category Pages::bannersSign category page loads without errors",
@@ -461,7 +461,7 @@
         "title": "bannersSign category page loads without errors",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1353
+        "duration": 1569
       },
       {
         "id": "desktop-firefox::Category Pages::marketingMaterials category page loads without errors",
@@ -469,7 +469,7 @@
         "title": "marketingMaterials category page loads without errors",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1306
+        "duration": 1580
       },
       {
         "id": "desktop-firefox::Category Pages::tradingCards category page loads without errors",
@@ -477,7 +477,7 @@
         "title": "tradingCards category page loads without errors",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 2484
+        "duration": 2722
       },
       {
         "id": "desktop-firefox::Category Pages::wallpapers category page loads without errors",
@@ -485,7 +485,7 @@
         "title": "wallpapers category page loads without errors",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1346
+        "duration": 1671
       },
       {
         "id": "desktop-firefox::Category Pages::apparel category page loads without errors",
@@ -493,7 +493,7 @@
         "title": "apparel category page loads without errors",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1435
+        "duration": 1577
       },
       {
         "id": "desktop-firefox::Category Pages::labelJarCombo category page loads without errors",
@@ -501,7 +501,7 @@
         "title": "labelJarCombo category page loads without errors",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1450
+        "duration": 1601
       },
       {
         "id": "desktop-firefox::Category Pages::material filter ?material=vinyl is accepted by server",
@@ -509,7 +509,7 @@
         "title": "material filter ?material=vinyl is accepted by server",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 2954
+        "duration": 3190
       },
       {
         "id": "desktop-firefox::Category Pages::product list is scrollable on mobile",
@@ -517,7 +517,7 @@
         "title": "product list is scrollable on mobile",
         "project": "desktop-firefox",
         "status": "skipped",
-        "duration": 244
+        "duration": 269
       },
       {
         "id": "desktop-safari::Category Pages::labels-stickers loads and shows products @smoke",
@@ -525,7 +525,7 @@
         "title": "labels-stickers loads and shows products @smoke",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2769
+        "duration": 3066
       },
       {
         "id": "desktop-safari::Category Pages::labels-stickers lists Roll Labels",
@@ -533,7 +533,7 @@
         "title": "labels-stickers lists Roll Labels",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2989
+        "duration": 2816
       },
       {
         "id": "desktop-safari::Category Pages::clicking a product navigates to product page",
@@ -541,7 +541,7 @@
         "title": "clicking a product navigates to product page",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 7397
+        "duration": 7786
       },
       {
         "id": "desktop-safari::Category Pages::labelsStickers category page loads without errors",
@@ -549,7 +549,7 @@
         "title": "labelsStickers category page loads without errors",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 3664
+        "duration": 2596
       },
       {
         "id": "desktop-safari::Category Pages::packagingBoxes category page loads without errors",
@@ -557,7 +557,7 @@
         "title": "packagingBoxes category page loads without errors",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 3363
+        "duration": 2851
       },
       {
         "id": "desktop-safari::Category Pages::bagsFlexible category page loads without errors",
@@ -565,7 +565,7 @@
         "title": "bagsFlexible category page loads without errors",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 3464
+        "duration": 2585
       },
       {
         "id": "desktop-safari::Category Pages::bannersSign category page loads without errors",
@@ -573,7 +573,7 @@
         "title": "bannersSign category page loads without errors",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 3074
+        "duration": 2654
       },
       {
         "id": "desktop-safari::Category Pages::marketingMaterials category page loads without errors",
@@ -581,7 +581,7 @@
         "title": "marketingMaterials category page loads without errors",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2530
+        "duration": 2654
       },
       {
         "id": "desktop-safari::Category Pages::tradingCards category page loads without errors",
@@ -589,7 +589,7 @@
         "title": "tradingCards category page loads without errors",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2355
+        "duration": 2161
       },
       {
         "id": "desktop-safari::Category Pages::wallpapers category page loads without errors",
@@ -597,7 +597,7 @@
         "title": "wallpapers category page loads without errors",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2306
+        "duration": 1877
       },
       {
         "id": "desktop-safari::Category Pages::apparel category page loads without errors",
@@ -605,7 +605,7 @@
         "title": "apparel category page loads without errors",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2693
+        "duration": 3397
       },
       {
         "id": "desktop-safari::Category Pages::labelJarCombo category page loads without errors",
@@ -613,7 +613,7 @@
         "title": "labelJarCombo category page loads without errors",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 4019
+        "duration": 2922
       },
       {
         "id": "desktop-safari::Category Pages::material filter ?material=vinyl is accepted by server",
@@ -621,7 +621,7 @@
         "title": "material filter ?material=vinyl is accepted by server",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 5868
+        "duration": 4883
       },
       {
         "id": "desktop-safari::Category Pages::product list is scrollable on mobile",
@@ -629,7 +629,7 @@
         "title": "product list is scrollable on mobile",
         "project": "desktop-safari",
         "status": "skipped",
-        "duration": 796
+        "duration": 634
       },
       {
         "id": "desktop-chrome::[Sync] Navigation::logo always navigates to homepage",
@@ -637,7 +637,7 @@
         "title": "logo always navigates to homepage",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1195
+        "duration": 1289
       },
       {
         "id": "desktop-chrome::[Sync] Navigation::cart icon is always reachable",
@@ -645,7 +645,7 @@
         "title": "cart icon is always reachable",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1171
+        "duration": 1269
       },
       {
         "id": "desktop-chrome::[Sync] Navigation::Labels & Stickers category is reachable from any device",
@@ -653,7 +653,7 @@
         "title": "Labels & Stickers category is reachable from any device",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 2183
+        "duration": 2244
       },
       {
         "id": "desktop-firefox::[Sync] Navigation::logo always navigates to homepage",
@@ -661,7 +661,7 @@
         "title": "logo always navigates to homepage",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1599
+        "duration": 1802
       },
       {
         "id": "desktop-firefox::[Sync] Navigation::cart icon is always reachable",
@@ -669,7 +669,7 @@
         "title": "cart icon is always reachable",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 2897
+        "duration": 1629
       },
       {
         "id": "desktop-firefox::[Sync] Navigation::Labels & Stickers category is reachable from any device",
@@ -677,7 +677,7 @@
         "title": "Labels & Stickers category is reachable from any device",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 2423
+        "duration": 2718
       },
       {
         "id": "desktop-safari::[Sync] Navigation::logo always navigates to homepage",
@@ -685,7 +685,7 @@
         "title": "logo always navigates to homepage",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 5557
+        "duration": 4276
       },
       {
         "id": "desktop-safari::[Sync] Navigation::cart icon is always reachable",
@@ -693,7 +693,7 @@
         "title": "cart icon is always reachable",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2883
+        "duration": 3157
       },
       {
         "id": "desktop-safari::[Sync] Navigation::Labels & Stickers category is reachable from any device",
@@ -701,7 +701,7 @@
         "title": "Labels & Stickers category is reachable from any device",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 5574
+        "duration": 4236
       },
       {
         "id": "desktop-chrome::[Sync] Homepage content::hero heading text is the same on all devices",
@@ -709,7 +709,7 @@
         "title": "hero heading text is the same on all devices",
         "project": "desktop-chrome",
         "status": "timedOut",
-        "duration": 60268
+        "duration": 60253
       },
       {
         "id": "desktop-chrome::[Sync] Homepage content::Shop Packaging CTA is visible on all devices",
@@ -717,7 +717,7 @@
         "title": "Shop Packaging CTA is visible on all devices",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1453
+        "duration": 2942
       },
       {
         "id": "desktop-chrome::[Sync] Homepage content::footer contact info visible on all devices after scroll",
@@ -725,7 +725,7 @@
         "title": "footer contact info visible on all devices after scroll",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 2370
+        "duration": 3345
       },
       {
         "id": "desktop-firefox::[Sync] Homepage content::hero heading text is the same on all devices",
@@ -733,7 +733,7 @@
         "title": "hero heading text is the same on all devices",
         "project": "desktop-firefox",
         "status": "timedOut",
-        "duration": 60266
+        "duration": 60287
       },
       {
         "id": "desktop-firefox::[Sync] Homepage content::Shop Packaging CTA is visible on all devices",
@@ -741,7 +741,7 @@
         "title": "Shop Packaging CTA is visible on all devices",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 2466
+        "duration": 3731
       },
       {
         "id": "desktop-firefox::[Sync] Homepage content::footer contact info visible on all devices after scroll",
@@ -749,7 +749,7 @@
         "title": "footer contact info visible on all devices after scroll",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 2881
+        "duration": 3593
       },
       {
         "id": "desktop-safari::[Sync] Homepage content::hero heading text is the same on all devices",
@@ -757,7 +757,7 @@
         "title": "hero heading text is the same on all devices",
         "project": "desktop-safari",
         "status": "timedOut",
-        "duration": 61449
+        "duration": 61155
       },
       {
         "id": "desktop-safari::[Sync] Homepage content::Shop Packaging CTA is visible on all devices",
@@ -765,7 +765,7 @@
         "title": "Shop Packaging CTA is visible on all devices",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 3072
+        "duration": 3447
       },
       {
         "id": "desktop-safari::[Sync] Homepage content::footer contact info visible on all devices after scroll",
@@ -773,7 +773,7 @@
         "title": "footer contact info visible on all devices after scroll",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 4462
+        "duration": 4600
       },
       {
         "id": "desktop-chrome::[Sync] Category pages::labels-stickers shows at least 1 product on all devices",
@@ -781,7 +781,7 @@
         "title": "labels-stickers shows at least 1 product on all devices",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1194
+        "duration": 2088
       },
       {
         "id": "desktop-chrome::[Sync] Category pages::product link navigates to /product/ on all devices",
@@ -789,7 +789,7 @@
         "title": "product link navigates to /product/ on all devices",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 3922
+        "duration": 6312
       },
       {
         "id": "desktop-firefox::[Sync] Category pages::labels-stickers shows at least 1 product on all devices",
@@ -797,7 +797,7 @@
         "title": "labels-stickers shows at least 1 product on all devices",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1664
+        "duration": 2337
       },
       {
         "id": "desktop-firefox::[Sync] Category pages::product link navigates to /product/ on all devices",
@@ -805,7 +805,7 @@
         "title": "product link navigates to /product/ on all devices",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 4715
+        "duration": 7026
       },
       {
         "id": "desktop-safari::[Sync] Category pages::labels-stickers shows at least 1 product on all devices",
@@ -813,7 +813,7 @@
         "title": "labels-stickers shows at least 1 product on all devices",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2919
+        "duration": 3291
       },
       {
         "id": "desktop-safari::[Sync] Category pages::product link navigates to /product/ on all devices",
@@ -821,7 +821,7 @@
         "title": "product link navigates to /product/ on all devices",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 7003
+        "duration": 8527
       },
       {
         "id": "desktop-chrome::[Sync] Product configurator::roll-labels page loads without 404 on all devices",
@@ -829,7 +829,7 @@
         "title": "roll-labels page loads without 404 on all devices",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 17693
+        "duration": 19294
       },
       {
         "id": "desktop-chrome::[Sync] Product configurator::no horizontal overflow on product page (any device)",
@@ -837,7 +837,7 @@
         "title": "no horizontal overflow on product page (any device)",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 18291
+        "duration": 18163
       },
       {
         "id": "desktop-firefox::[Sync] Product configurator::roll-labels page loads without 404 on all devices",
@@ -845,7 +845,7 @@
         "title": "roll-labels page loads without 404 on all devices",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 18298
+        "duration": 19356
       },
       {
         "id": "desktop-firefox::[Sync] Product configurator::no horizontal overflow on product page (any device)",
@@ -853,7 +853,7 @@
         "title": "no horizontal overflow on product page (any device)",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 19252
+        "duration": 18479
       },
       {
         "id": "desktop-safari::[Sync] Product configurator::roll-labels page loads without 404 on all devices",
@@ -861,7 +861,7 @@
         "title": "roll-labels page loads without 404 on all devices",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 19790
+        "duration": 20534
       },
       {
         "id": "desktop-safari::[Sync] Product configurator::no horizontal overflow on product page (any device)",
@@ -869,7 +869,7 @@
         "title": "no horizontal overflow on product page (any device)",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 20018
+        "duration": 21131
       },
       {
         "id": "desktop-chrome::[Sync] Auth page::sign-in form renders on all devices",
@@ -877,7 +877,7 @@
         "title": "sign-in form renders on all devices",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 955
+        "duration": 1163
       },
       {
         "id": "desktop-chrome::[Sync] Auth page::invalid login shows error on all devices",
@@ -885,7 +885,7 @@
         "title": "invalid login shows error on all devices",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1034
+        "duration": 929
       },
       {
         "id": "desktop-firefox::[Sync] Auth page::sign-in form renders on all devices",
@@ -893,7 +893,7 @@
         "title": "sign-in form renders on all devices",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1312
+        "duration": 1248
       },
       {
         "id": "desktop-firefox::[Sync] Auth page::invalid login shows error on all devices",
@@ -901,7 +901,7 @@
         "title": "invalid login shows error on all devices",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1394
+        "duration": 1262
       },
       {
         "id": "desktop-safari::[Sync] Auth page::sign-in form renders on all devices",
@@ -909,7 +909,7 @@
         "title": "sign-in form renders on all devices",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 1836
+        "duration": 2010
       },
       {
         "id": "desktop-safari::[Sync] Auth page::invalid login shows error on all devices",
@@ -917,7 +917,7 @@
         "title": "invalid login shows error on all devices",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2079
+        "duration": 1968
       },
       {
         "id": "desktop-chrome::[Sync] SEO & meta tags::homepage has meta description on all devices",
@@ -925,7 +925,7 @@
         "title": "homepage has meta description on all devices",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1281
+        "duration": 1469
       },
       {
         "id": "desktop-chrome::[Sync] SEO & meta tags::category page has canonical URL",
@@ -933,7 +933,7 @@
         "title": "category page has canonical URL",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1285
+        "duration": 1387
       },
       {
         "id": "desktop-firefox::[Sync] SEO & meta tags::homepage has meta description on all devices",
@@ -941,7 +941,7 @@
         "title": "homepage has meta description on all devices",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1721
+        "duration": 1611
       },
       {
         "id": "desktop-firefox::[Sync] SEO & meta tags::category page has canonical URL",
@@ -949,7 +949,7 @@
         "title": "category page has canonical URL",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 3018
+        "duration": 2700
       },
       {
         "id": "desktop-safari::[Sync] SEO & meta tags::homepage has meta description on all devices",
@@ -957,7 +957,7 @@
         "title": "homepage has meta description on all devices",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2946
+        "duration": 3120
       },
       {
         "id": "desktop-safari::[Sync] SEO & meta tags::category page has canonical URL",
@@ -965,7 +965,7 @@
         "title": "category page has canonical URL",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2703
+        "duration": 2670
       },
       {
         "id": "desktop-chrome::Homepage::loads with correct title @smoke",
@@ -973,7 +973,7 @@
         "title": "loads with correct title @smoke",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1261
+        "duration": 1412
       },
       {
         "id": "desktop-chrome::Homepage::logo is visible and links to homepage @smoke",
@@ -981,7 +981,7 @@
         "title": "logo is visible and links to homepage @smoke",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1464
+        "duration": 1479
       },
       {
         "id": "desktop-chrome::Homepage::hero heading is visible @smoke",
@@ -989,7 +989,7 @@
         "title": "hero heading is visible @smoke",
         "project": "desktop-chrome",
         "status": "failed",
-        "duration": 6396
+        "duration": 6412
       },
       {
         "id": "desktop-chrome::Homepage::hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
@@ -997,7 +997,7 @@
         "title": "hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
         "project": "desktop-chrome",
         "status": "failed",
-        "duration": 6332
+        "duration": 6570
       },
       {
         "id": "desktop-chrome::Homepage::desktop nav shows category links",
@@ -1005,7 +1005,7 @@
         "title": "desktop nav shows category links",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1442
+        "duration": 1347
       },
       {
         "id": "desktop-chrome::Homepage::mobile: hamburger menu opens and shows categories",
@@ -1013,7 +1013,7 @@
         "title": "mobile: hamburger menu opens and shows categories",
         "project": "desktop-chrome",
         "status": "skipped",
-        "duration": 1235
+        "duration": 1294
       },
       {
         "id": "desktop-chrome::Homepage::cart icon is accessible from header",
@@ -1021,7 +1021,7 @@
         "title": "cart icon is accessible from header",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1293
+        "duration": 1342
       },
       {
         "id": "desktop-chrome::Homepage::sign in link is accessible from header",
@@ -1029,7 +1029,7 @@
         "title": "sign in link is accessible from header",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1303
+        "duration": 1377
       },
       {
         "id": "desktop-chrome::Homepage::hero slider images render",
@@ -1037,7 +1037,7 @@
         "title": "hero slider images render",
         "project": "desktop-chrome",
         "status": "failed",
-        "duration": 1463
+        "duration": 1391
       },
       {
         "id": "desktop-chrome::Homepage::category cards are present on homepage",
@@ -1045,7 +1045,7 @@
         "title": "category cards are present on homepage",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 1339
+        "duration": 1350
       },
       {
         "id": "desktop-chrome::Homepage::footer shows phone, email, and address",
@@ -1053,7 +1053,7 @@
         "title": "footer shows phone, email, and address",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 2570
+        "duration": 2631
       },
       {
         "id": "desktop-chrome::Homepage::footer phone number is correct",
@@ -1061,7 +1061,7 @@
         "title": "footer phone number is correct",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 2366
+        "duration": 2539
       },
       {
         "id": "desktop-chrome::Homepage::hero heading is visible on any viewport",
@@ -1069,7 +1069,7 @@
         "title": "hero heading is visible on any viewport",
         "project": "desktop-chrome",
         "status": "failed",
-        "duration": 6267
+        "duration": 6368
       },
       {
         "id": "desktop-chrome::Homepage::CTAs are tappable size on mobile",
@@ -1077,7 +1077,7 @@
         "title": "CTAs are tappable size on mobile",
         "project": "desktop-chrome",
         "status": "skipped",
-        "duration": 1364
+        "duration": 1586
       },
       {
         "id": "desktop-firefox::Homepage::loads with correct title @smoke",
@@ -1085,7 +1085,7 @@
         "title": "loads with correct title @smoke",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1830
+        "duration": 1848
       },
       {
         "id": "desktop-firefox::Homepage::logo is visible and links to homepage @smoke",
@@ -1093,7 +1093,7 @@
         "title": "logo is visible and links to homepage @smoke",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1870
+        "duration": 1760
       },
       {
         "id": "desktop-firefox::Homepage::hero heading is visible @smoke",
@@ -1101,7 +1101,7 @@
         "title": "hero heading is visible @smoke",
         "project": "desktop-firefox",
         "status": "failed",
-        "duration": 6447
+        "duration": 6773
       },
       {
         "id": "desktop-firefox::Homepage::hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
@@ -1109,7 +1109,7 @@
         "title": "hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
         "project": "desktop-firefox",
         "status": "failed",
-        "duration": 7344
+        "duration": 7243
       },
       {
         "id": "desktop-firefox::Homepage::desktop nav shows category links",
@@ -1117,7 +1117,7 @@
         "title": "desktop nav shows category links",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 2363
+        "duration": 2652
       },
       {
         "id": "desktop-firefox::Homepage::mobile: hamburger menu opens and shows categories",
@@ -1125,7 +1125,7 @@
         "title": "mobile: hamburger menu opens and shows categories",
         "project": "desktop-firefox",
         "status": "skipped",
-        "duration": 1759
+        "duration": 1949
       },
       {
         "id": "desktop-firefox::Homepage::cart icon is accessible from header",
@@ -1133,7 +1133,7 @@
         "title": "cart icon is accessible from header",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1868
+        "duration": 1895
       },
       {
         "id": "desktop-firefox::Homepage::sign in link is accessible from header",
@@ -1141,7 +1141,7 @@
         "title": "sign in link is accessible from header",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 1929
+        "duration": 1689
       },
       {
         "id": "desktop-firefox::Homepage::hero slider images render",
@@ -1149,7 +1149,7 @@
         "title": "hero slider images render",
         "project": "desktop-firefox",
         "status": "failed",
-        "duration": 1892
+        "duration": 2005
       },
       {
         "id": "desktop-firefox::Homepage::category cards are present on homepage",
@@ -1157,7 +1157,7 @@
         "title": "category cards are present on homepage",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 2304
+        "duration": 2251
       },
       {
         "id": "desktop-firefox::Homepage::footer shows phone, email, and address",
@@ -1165,7 +1165,7 @@
         "title": "footer shows phone, email, and address",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 2781
+        "duration": 2977
       },
       {
         "id": "desktop-firefox::Homepage::footer phone number is correct",
@@ -1173,7 +1173,7 @@
         "title": "footer phone number is correct",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 2768
+        "duration": 2823
       },
       {
         "id": "desktop-firefox::Homepage::hero heading is visible on any viewport",
@@ -1181,7 +1181,7 @@
         "title": "hero heading is visible on any viewport",
         "project": "desktop-firefox",
         "status": "failed",
-        "duration": 6478
+        "duration": 6556
       },
       {
         "id": "desktop-firefox::Homepage::CTAs are tappable size on mobile",
@@ -1189,7 +1189,7 @@
         "title": "CTAs are tappable size on mobile",
         "project": "desktop-firefox",
         "status": "skipped",
-        "duration": 2301
+        "duration": 2321
       },
       {
         "id": "desktop-safari::Homepage::loads with correct title @smoke",
@@ -1197,7 +1197,7 @@
         "title": "loads with correct title @smoke",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 3081
+        "duration": 2862
       },
       {
         "id": "desktop-safari::Homepage::logo is visible and links to homepage @smoke",
@@ -1205,7 +1205,7 @@
         "title": "logo is visible and links to homepage @smoke",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 3756
+        "duration": 3598
       },
       {
         "id": "desktop-safari::Homepage::hero heading is visible @smoke",
@@ -1213,7 +1213,7 @@
         "title": "hero heading is visible @smoke",
         "project": "desktop-safari",
         "status": "failed",
-        "duration": 7625
+        "duration": 7694
       },
       {
         "id": "desktop-safari::Homepage::hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
@@ -1221,7 +1221,7 @@
         "title": "hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
         "project": "desktop-safari",
         "status": "failed",
-        "duration": 8065
+        "duration": 8427
       },
       {
         "id": "desktop-safari::Homepage::desktop nav shows category links",
@@ -1229,7 +1229,7 @@
         "title": "desktop nav shows category links",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 4018
+        "duration": 3239
       },
       {
         "id": "desktop-safari::Homepage::mobile: hamburger menu opens and shows categories",
@@ -1237,7 +1237,7 @@
         "title": "mobile: hamburger menu opens and shows categories",
         "project": "desktop-safari",
         "status": "skipped",
-        "duration": 2346
+        "duration": 2827
       },
       {
         "id": "desktop-safari::Homepage::cart icon is accessible from header",
@@ -1245,7 +1245,7 @@
         "title": "cart icon is accessible from header",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2961
+        "duration": 2903
       },
       {
         "id": "desktop-safari::Homepage::sign in link is accessible from header",
@@ -1253,7 +1253,7 @@
         "title": "sign in link is accessible from header",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2962
+        "duration": 2998
       },
       {
         "id": "desktop-safari::Homepage::hero slider images render",
@@ -1261,7 +1261,7 @@
         "title": "hero slider images render",
         "project": "desktop-safari",
         "status": "failed",
-        "duration": 3228
+        "duration": 2838
       },
       {
         "id": "desktop-safari::Homepage::category cards are present on homepage",
@@ -1269,7 +1269,7 @@
         "title": "category cards are present on homepage",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 2822
+        "duration": 3329
       },
       {
         "id": "desktop-safari::Homepage::footer shows phone, email, and address",
@@ -1277,7 +1277,7 @@
         "title": "footer shows phone, email, and address",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 4070
+        "duration": 4383
       },
       {
         "id": "desktop-safari::Homepage::footer phone number is correct",
@@ -1285,7 +1285,7 @@
         "title": "footer phone number is correct",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 3864
+        "duration": 4663
       },
       {
         "id": "desktop-safari::Homepage::hero heading is visible on any viewport",
@@ -1293,7 +1293,7 @@
         "title": "hero heading is visible on any viewport",
         "project": "desktop-safari",
         "status": "failed",
-        "duration": 7449
+        "duration": 7907
       },
       {
         "id": "desktop-safari::Homepage::CTAs are tappable size on mobile",
@@ -1301,7 +1301,7 @@
         "title": "CTAs are tappable size on mobile",
         "project": "desktop-safari",
         "status": "skipped",
-        "duration": 3080
+        "duration": 3644
       },
       {
         "id": "desktop-chrome::Product Configurator::roll labels configurator loads @smoke",
@@ -1309,7 +1309,7 @@
         "title": "roll labels configurator loads @smoke",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 17993
+        "duration": 18347
       },
       {
         "id": "desktop-chrome::Product Configurator::product title is visible after load",
@@ -1317,7 +1317,7 @@
         "title": "product title is visible after load",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 17805
+        "duration": 18962
       },
       {
         "id": "desktop-chrome::Product Configurator::price updates when quantity changes",
@@ -1325,7 +1325,7 @@
         "title": "price updates when quantity changes",
         "project": "desktop-chrome",
         "status": "skipped",
-        "duration": 17951
+        "duration": 18764
       },
       {
         "id": "desktop-chrome::Product Configurator::add to cart button is present",
@@ -1333,7 +1333,7 @@
         "title": "add to cart button is present",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 17928
+        "duration": 18653
       },
       {
         "id": "desktop-chrome::Product Configurator::configurator is usable on mobile viewport",
@@ -1341,7 +1341,7 @@
         "title": "configurator is usable on mobile viewport",
         "project": "desktop-chrome",
         "status": "skipped",
-        "duration": 93
+        "duration": 83
       },
       {
         "id": "desktop-chrome::Product Configurator::rollLabels product page loads without 404",
@@ -1349,7 +1349,7 @@
         "title": "rollLabels product page loads without 404",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 18021
+        "duration": 18254
       },
       {
         "id": "desktop-chrome::Product Configurator::stickerSheets product page loads without 404",
@@ -1357,7 +1357,7 @@
         "title": "stickerSheets product page loads without 404",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 18049
+        "duration": 18181
       },
       {
         "id": "desktop-chrome::Product Configurator::dieCutStickers product page loads without 404",
@@ -1365,7 +1365,7 @@
         "title": "dieCutStickers product page loads without 404",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 18291
+        "duration": 18934
       },
       {
         "id": "desktop-chrome::Product Configurator::individualStickers product page loads without 404",
@@ -1373,7 +1373,7 @@
         "title": "individualStickers product page loads without 404",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 17794
+        "duration": 18452
       },
       {
         "id": "desktop-chrome::Product Configurator::variableDataLabels product page loads without 404",
@@ -1381,7 +1381,7 @@
         "title": "variableDataLabels product page loads without 404",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 18033
+        "duration": 18451
       },
       {
         "id": "desktop-firefox::Product Configurator::roll labels configurator loads @smoke",
@@ -1389,7 +1389,7 @@
         "title": "roll labels configurator loads @smoke",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 19208
+        "duration": 18186
       },
       {
         "id": "desktop-firefox::Product Configurator::product title is visible after load",
@@ -1397,7 +1397,7 @@
         "title": "product title is visible after load",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 18179
+        "duration": 18154
       },
       {
         "id": "desktop-firefox::Product Configurator::price updates when quantity changes",
@@ -1405,7 +1405,7 @@
         "title": "price updates when quantity changes",
         "project": "desktop-firefox",
         "status": "skipped",
-        "duration": 18167
+        "duration": 18392
       },
       {
         "id": "desktop-firefox::Product Configurator::add to cart button is present",
@@ -1413,7 +1413,7 @@
         "title": "add to cart button is present",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 18182
+        "duration": 18331
       },
       {
         "id": "desktop-firefox::Product Configurator::configurator is usable on mobile viewport",
@@ -1421,7 +1421,7 @@
         "title": "configurator is usable on mobile viewport",
         "project": "desktop-firefox",
         "status": "skipped",
-        "duration": 294
+        "duration": 283
       },
       {
         "id": "desktop-firefox::Product Configurator::rollLabels product page loads without 404",
@@ -1429,7 +1429,7 @@
         "title": "rollLabels product page loads without 404",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 18089
+        "duration": 18417
       },
       {
         "id": "desktop-firefox::Product Configurator::stickerSheets product page loads without 404",
@@ -1437,7 +1437,7 @@
         "title": "stickerSheets product page loads without 404",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 17916
+        "duration": 18274
       },
       {
         "id": "desktop-firefox::Product Configurator::dieCutStickers product page loads without 404",
@@ -1445,7 +1445,7 @@
         "title": "dieCutStickers product page loads without 404",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 17949
+        "duration": 19045
       },
       {
         "id": "desktop-firefox::Product Configurator::individualStickers product page loads without 404",
@@ -1453,7 +1453,7 @@
         "title": "individualStickers product page loads without 404",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 18493
+        "duration": 18243
       },
       {
         "id": "desktop-firefox::Product Configurator::variableDataLabels product page loads without 404",
@@ -1461,7 +1461,7 @@
         "title": "variableDataLabels product page loads without 404",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 19527
+        "duration": 19005
       },
       {
         "id": "desktop-safari::Product Configurator::roll labels configurator loads @smoke",
@@ -1469,7 +1469,7 @@
         "title": "roll labels configurator loads @smoke",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 19169
+        "duration": 20028
       },
       {
         "id": "desktop-safari::Product Configurator::product title is visible after load",
@@ -1477,7 +1477,7 @@
         "title": "product title is visible after load",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 18895
+        "duration": 20160
       },
       {
         "id": "desktop-safari::Product Configurator::price updates when quantity changes",
@@ -1485,7 +1485,7 @@
         "title": "price updates when quantity changes",
         "project": "desktop-safari",
         "status": "skipped",
-        "duration": 19037
+        "duration": 19319
       },
       {
         "id": "desktop-safari::Product Configurator::add to cart button is present",
@@ -1493,7 +1493,7 @@
         "title": "add to cart button is present",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 19197
+        "duration": 19295
       },
       {
         "id": "desktop-safari::Product Configurator::configurator is usable on mobile viewport",
@@ -1501,7 +1501,7 @@
         "title": "configurator is usable on mobile viewport",
         "project": "desktop-safari",
         "status": "skipped",
-        "duration": 431
+        "duration": 565
       },
       {
         "id": "desktop-safari::Product Configurator::rollLabels product page loads without 404",
@@ -1509,7 +1509,7 @@
         "title": "rollLabels product page loads without 404",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 18983
+        "duration": 19055
       },
       {
         "id": "desktop-safari::Product Configurator::stickerSheets product page loads without 404",
@@ -1517,7 +1517,7 @@
         "title": "stickerSheets product page loads without 404",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 19008
+        "duration": 19776
       },
       {
         "id": "desktop-safari::Product Configurator::dieCutStickers product page loads without 404",
@@ -1525,7 +1525,7 @@
         "title": "dieCutStickers product page loads without 404",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 18999
+        "duration": 19498
       },
       {
         "id": "desktop-safari::Product Configurator::individualStickers product page loads without 404",
@@ -1533,7 +1533,7 @@
         "title": "individualStickers product page loads without 404",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 18894
+        "duration": 19574
       },
       {
         "id": "desktop-safari::Product Configurator::variableDataLabels product page loads without 404",
@@ -1541,7 +1541,7 @@
         "title": "variableDataLabels product page loads without 404",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 19104
+        "duration": 19610
       },
       {
         "id": "desktop-chrome::Word Search::find \"cannabis\" across all pages",
@@ -1549,7 +1549,7 @@
         "title": "find \"cannabis\" across all pages",
         "project": "desktop-chrome",
         "status": "passed",
-        "duration": 35194
+        "duration": 38314
       },
       {
         "id": "desktop-firefox::Word Search::find \"cannabis\" across all pages",
@@ -1557,7 +1557,7 @@
         "title": "find \"cannabis\" across all pages",
         "project": "desktop-firefox",
         "status": "passed",
-        "duration": 45787
+        "duration": 54594
       },
       {
         "id": "desktop-safari::Word Search::find \"cannabis\" across all pages",
@@ -1565,151 +1565,7 @@
         "title": "find \"cannabis\" across all pages",
         "project": "desktop-safari",
         "status": "passed",
-        "duration": 32677
-      },
-      {
-        "id": "desktop-chrome::Authentication::sign in page loads @smoke",
-        "suite": "Authentication",
-        "title": "sign in page loads @smoke",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 8449
-      },
-      {
-        "id": "desktop-chrome::Authentication::sign in button is present",
-        "suite": "Authentication",
-        "title": "sign in button is present",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 8162
-      },
-      {
-        "id": "desktop-chrome::Authentication::invalid credentials shows error",
-        "suite": "Authentication",
-        "title": "invalid credentials shows error",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 8832
-      },
-      {
-        "id": "desktop-chrome::Authentication::register link is present",
-        "suite": "Authentication",
-        "title": "register link is present",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 8209
-      },
-      {
-        "id": "desktop-chrome::Authentication::sign in form is usable on mobile",
-        "suite": "Authentication",
-        "title": "sign in form is usable on mobile",
-        "project": "desktop-chrome",
-        "status": "skipped",
-        "duration": 7907
-      },
-      {
-        "id": "desktop-chrome::Authentication::valid credentials redirect away from auth page",
-        "suite": "Authentication",
-        "title": "valid credentials redirect away from auth page",
-        "project": "desktop-chrome",
-        "status": "skipped",
-        "duration": 8474
-      },
-      {
-        "id": "desktop-firefox::Authentication::sign in page loads @smoke",
-        "suite": "Authentication",
-        "title": "sign in page loads @smoke",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 5010
-      },
-      {
-        "id": "desktop-firefox::Authentication::sign in button is present",
-        "suite": "Authentication",
-        "title": "sign in button is present",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 7766
-      },
-      {
-        "id": "desktop-firefox::Authentication::invalid credentials shows error",
-        "suite": "Authentication",
-        "title": "invalid credentials shows error",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 9041
-      },
-      {
-        "id": "desktop-firefox::Authentication::register link is present",
-        "suite": "Authentication",
-        "title": "register link is present",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 11175
-      },
-      {
-        "id": "desktop-firefox::Authentication::sign in form is usable on mobile",
-        "suite": "Authentication",
-        "title": "sign in form is usable on mobile",
-        "project": "desktop-firefox",
-        "status": "skipped",
-        "duration": 19716
-      },
-      {
-        "id": "desktop-firefox::Authentication::valid credentials redirect away from auth page",
-        "suite": "Authentication",
-        "title": "valid credentials redirect away from auth page",
-        "project": "desktop-firefox",
-        "status": "skipped",
-        "duration": 4477
-      },
-      {
-        "id": "desktop-safari::Authentication::sign in page loads @smoke",
-        "suite": "Authentication",
-        "title": "sign in page loads @smoke",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 18343
-      },
-      {
-        "id": "desktop-safari::Authentication::sign in button is present",
-        "suite": "Authentication",
-        "title": "sign in button is present",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 11054
-      },
-      {
-        "id": "desktop-safari::Authentication::invalid credentials shows error",
-        "suite": "Authentication",
-        "title": "invalid credentials shows error",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 9671
-      },
-      {
-        "id": "desktop-safari::Authentication::register link is present",
-        "suite": "Authentication",
-        "title": "register link is present",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 8372
-      },
-      {
-        "id": "desktop-safari::Authentication::sign in form is usable on mobile",
-        "suite": "Authentication",
-        "title": "sign in form is usable on mobile",
-        "project": "desktop-safari",
-        "status": "skipped",
-        "duration": 10843
-      },
-      {
-        "id": "desktop-safari::Authentication::valid credentials redirect away from auth page",
-        "suite": "Authentication",
-        "title": "valid credentials redirect away from auth page",
-        "project": "desktop-safari",
-        "status": "skipped",
-        "duration": 8143
+        "duration": 43000
       },
       {
         "id": "mobile-ios::Authentication::sign in page loads @smoke",
@@ -1717,7 +1573,7 @@
         "title": "sign in page loads @smoke",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 6687
+        "duration": 6683
       },
       {
         "id": "mobile-ios::Authentication::sign in button is present",
@@ -1725,7 +1581,7 @@
         "title": "sign in button is present",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 6711
+        "duration": 5757
       },
       {
         "id": "mobile-ios::Authentication::invalid credentials shows error",
@@ -1733,7 +1589,7 @@
         "title": "invalid credentials shows error",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 8927
+        "duration": 2409
       },
       {
         "id": "mobile-ios::Authentication::register link is present",
@@ -1741,7 +1597,7 @@
         "title": "register link is present",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 5258
+        "duration": 2194
       },
       {
         "id": "mobile-ios::Authentication::sign in form is usable on mobile",
@@ -1749,7 +1605,7 @@
         "title": "sign in form is usable on mobile",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 7619
+        "duration": 2588
       },
       {
         "id": "mobile-ios::Authentication::valid credentials redirect away from auth page",
@@ -1757,7 +1613,7 @@
         "title": "valid credentials redirect away from auth page",
         "project": "mobile-ios",
         "status": "skipped",
-        "duration": 20464
+        "duration": 1519
       },
       {
         "id": "mobile-android::Authentication::sign in page loads @smoke",
@@ -1765,7 +1621,7 @@
         "title": "sign in page loads @smoke",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 12339
+        "duration": 913
       },
       {
         "id": "mobile-android::Authentication::sign in button is present",
@@ -1773,7 +1629,7 @@
         "title": "sign in button is present",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 8169
+        "duration": 839
       },
       {
         "id": "mobile-android::Authentication::invalid credentials shows error",
@@ -1781,7 +1637,7 @@
         "title": "invalid credentials shows error",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 8622
+        "duration": 1561
       },
       {
         "id": "mobile-android::Authentication::register link is present",
@@ -1789,7 +1645,7 @@
         "title": "register link is present",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 8965
+        "duration": 792
       },
       {
         "id": "mobile-android::Authentication::sign in form is usable on mobile",
@@ -1797,7 +1653,7 @@
         "title": "sign in form is usable on mobile",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 7542
+        "duration": 758
       },
       {
         "id": "mobile-android::Authentication::valid credentials redirect away from auth page",
@@ -1805,7 +1661,7 @@
         "title": "valid credentials redirect away from auth page",
         "project": "mobile-android",
         "status": "skipped",
-        "duration": 7897
+        "duration": 741
       },
       {
         "id": "mobile-ipad::Authentication::sign in page loads @smoke",
@@ -1813,7 +1669,7 @@
         "title": "sign in page loads @smoke",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 22236
+        "duration": 1779
       },
       {
         "id": "mobile-ipad::Authentication::sign in button is present",
@@ -1821,7 +1677,7 @@
         "title": "sign in button is present",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 22592
+        "duration": 1602
       },
       {
         "id": "mobile-ipad::Authentication::invalid credentials shows error",
@@ -1829,7 +1685,7 @@
         "title": "invalid credentials shows error",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 18002
+        "duration": 1910
       },
       {
         "id": "mobile-ipad::Authentication::register link is present",
@@ -1837,7 +1693,7 @@
         "title": "register link is present",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 13252
+        "duration": 1399
       },
       {
         "id": "mobile-ipad::Authentication::sign in form is usable on mobile",
@@ -1845,7 +1701,7 @@
         "title": "sign in form is usable on mobile",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 14791
+        "duration": 1719
       },
       {
         "id": "mobile-ipad::Authentication::valid credentials redirect away from auth page",
@@ -1853,79 +1709,7 @@
         "title": "valid credentials redirect away from auth page",
         "project": "mobile-ipad",
         "status": "skipped",
-        "duration": 15930
-      },
-      {
-        "id": "desktop-chrome::Cart::cart page loads @smoke",
-        "suite": "Cart",
-        "title": "cart page loads @smoke",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 11199
-      },
-      {
-        "id": "desktop-chrome::Cart::empty cart shows message or cart UI",
-        "suite": "Cart",
-        "title": "empty cart shows message or cart UI",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 8740
-      },
-      {
-        "id": "desktop-chrome::Cart::checkout button is present when cart has items",
-        "suite": "Cart",
-        "title": "checkout button is present when cart has items",
-        "project": "desktop-chrome",
-        "status": "skipped",
-        "duration": 9069
-      },
-      {
-        "id": "desktop-firefox::Cart::cart page loads @smoke",
-        "suite": "Cart",
-        "title": "cart page loads @smoke",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 13174
-      },
-      {
-        "id": "desktop-firefox::Cart::empty cart shows message or cart UI",
-        "suite": "Cart",
-        "title": "empty cart shows message or cart UI",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 30588
-      },
-      {
-        "id": "desktop-firefox::Cart::checkout button is present when cart has items",
-        "suite": "Cart",
-        "title": "checkout button is present when cart has items",
-        "project": "desktop-firefox",
-        "status": "skipped",
-        "duration": 4348
-      },
-      {
-        "id": "desktop-safari::Cart::cart page loads @smoke",
-        "suite": "Cart",
-        "title": "cart page loads @smoke",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 15605
-      },
-      {
-        "id": "desktop-safari::Cart::empty cart shows message or cart UI",
-        "suite": "Cart",
-        "title": "empty cart shows message or cart UI",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 22369
-      },
-      {
-        "id": "desktop-safari::Cart::checkout button is present when cart has items",
-        "suite": "Cart",
-        "title": "checkout button is present when cart has items",
-        "project": "desktop-safari",
-        "status": "skipped",
-        "duration": 15154
+        "duration": 1673
       },
       {
         "id": "mobile-ios::Cart::cart page loads @smoke",
@@ -1933,7 +1717,7 @@
         "title": "cart page loads @smoke",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 18934
+        "duration": 1881
       },
       {
         "id": "mobile-ios::Cart::empty cart shows message or cart UI",
@@ -1941,7 +1725,7 @@
         "title": "empty cart shows message or cart UI",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 15182
+        "duration": 2404
       },
       {
         "id": "mobile-ios::Cart::checkout button is present when cart has items",
@@ -1949,7 +1733,7 @@
         "title": "checkout button is present when cart has items",
         "project": "mobile-ios",
         "status": "skipped",
-        "duration": 19510
+        "duration": 1774
       },
       {
         "id": "mobile-android::Cart::cart page loads @smoke",
@@ -1957,7 +1741,7 @@
         "title": "cart page loads @smoke",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 16154
+        "duration": 1128
       },
       {
         "id": "mobile-android::Cart::empty cart shows message or cart UI",
@@ -1965,7 +1749,7 @@
         "title": "empty cart shows message or cart UI",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 13459
+        "duration": 1466
       },
       {
         "id": "mobile-android::Cart::checkout button is present when cart has items",
@@ -1973,7 +1757,7 @@
         "title": "checkout button is present when cart has items",
         "project": "mobile-android",
         "status": "skipped",
-        "duration": 13443
+        "duration": 881
       },
       {
         "id": "mobile-ipad::Cart::cart page loads @smoke",
@@ -1981,7 +1765,7 @@
         "title": "cart page loads @smoke",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 40862
+        "duration": 1908
       },
       {
         "id": "mobile-ipad::Cart::empty cart shows message or cart UI",
@@ -1989,7 +1773,7 @@
         "title": "empty cart shows message or cart UI",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 12597
+        "duration": 1888
       },
       {
         "id": "mobile-ipad::Cart::checkout button is present when cart has items",
@@ -1997,487 +1781,79 @@
         "title": "checkout button is present when cart has items",
         "project": "mobile-ipad",
         "status": "skipped",
-        "duration": 29430
-      },
-      {
-        "id": "desktop-chrome::Quote Request::quote modal opens @smoke",
-        "suite": "Quote Request",
-        "title": "quote modal opens @smoke",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 12399
-      },
-      {
-        "id": "desktop-chrome::Quote Request::quote form fields are present",
-        "suite": "Quote Request",
-        "title": "quote form fields are present",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 9782
-      },
-      {
-        "id": "desktop-chrome::Quote Request::submit button is tappable on mobile",
-        "suite": "Quote Request",
-        "title": "submit button is tappable on mobile",
-        "project": "desktop-chrome",
-        "status": "skipped",
-        "duration": 9444
-      },
-      {
-        "id": "desktop-firefox::Quote Request::quote modal opens @smoke",
-        "suite": "Quote Request",
-        "title": "quote modal opens @smoke",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 7826
-      },
-      {
-        "id": "desktop-firefox::Quote Request::quote form fields are present",
-        "suite": "Quote Request",
-        "title": "quote form fields are present",
-        "project": "desktop-firefox",
-        "status": "failed",
-        "duration": 34304
-      },
-      {
-        "id": "desktop-firefox::Quote Request::submit button is tappable on mobile",
-        "suite": "Quote Request",
-        "title": "submit button is tappable on mobile",
-        "project": "desktop-firefox",
-        "status": "skipped",
-        "duration": 10803
-      },
-      {
-        "id": "desktop-safari::Quote Request::quote modal opens @smoke",
-        "suite": "Quote Request",
-        "title": "quote modal opens @smoke",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 40450
-      },
-      {
-        "id": "desktop-safari::Quote Request::quote form fields are present",
-        "suite": "Quote Request",
-        "title": "quote form fields are present",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 47577
-      },
-      {
-        "id": "desktop-safari::Quote Request::submit button is tappable on mobile",
-        "suite": "Quote Request",
-        "title": "submit button is tappable on mobile",
-        "project": "desktop-safari",
-        "status": "skipped",
-        "duration": 38571
+        "duration": 1680
       },
       {
         "id": "mobile-ios::Quote Request::quote modal opens @smoke",
         "suite": "Quote Request",
         "title": "quote modal opens @smoke",
         "project": "mobile-ios",
-        "status": "passed",
-        "duration": 28384
+        "status": "timedOut",
+        "duration": 180811
       },
       {
         "id": "mobile-ios::Quote Request::quote form fields are present",
         "suite": "Quote Request",
         "title": "quote form fields are present",
         "project": "mobile-ios",
-        "status": "passed",
-        "duration": 25643
+        "status": "failed",
+        "duration": 24013
       },
       {
         "id": "mobile-ios::Quote Request::submit button is tappable on mobile",
         "suite": "Quote Request",
         "title": "submit button is tappable on mobile",
         "project": "mobile-ios",
-        "status": "passed",
-        "duration": 27860
+        "status": "timedOut",
+        "duration": 60874
       },
       {
         "id": "mobile-android::Quote Request::quote modal opens @smoke",
         "suite": "Quote Request",
         "title": "quote modal opens @smoke",
         "project": "mobile-android",
-        "status": "passed",
-        "duration": 19072
+        "status": "timedOut",
+        "duration": 180517
       },
       {
         "id": "mobile-android::Quote Request::quote form fields are present",
         "suite": "Quote Request",
         "title": "quote form fields are present",
         "project": "mobile-android",
-        "status": "passed",
-        "duration": 16765
+        "status": "failed",
+        "duration": 23132
       },
       {
         "id": "mobile-android::Quote Request::submit button is tappable on mobile",
         "suite": "Quote Request",
         "title": "submit button is tappable on mobile",
         "project": "mobile-android",
-        "status": "passed",
-        "duration": 16944
+        "status": "timedOut",
+        "duration": 60513
       },
       {
         "id": "mobile-ipad::Quote Request::quote modal opens @smoke",
         "suite": "Quote Request",
         "title": "quote modal opens @smoke",
         "project": "mobile-ipad",
-        "status": "passed",
-        "duration": 29337
+        "status": "timedOut",
+        "duration": 181902
       },
       {
         "id": "mobile-ipad::Quote Request::quote form fields are present",
         "suite": "Quote Request",
         "title": "quote form fields are present",
         "project": "mobile-ipad",
-        "status": "passed",
-        "duration": 27962
+        "status": "failed",
+        "duration": 24891
       },
       {
         "id": "mobile-ipad::Quote Request::submit button is tappable on mobile",
         "suite": "Quote Request",
         "title": "submit button is tappable on mobile",
         "project": "mobile-ipad",
-        "status": "passed",
-        "duration": 45880
-      },
-      {
-        "id": "desktop-chrome::Category Pages::labels-stickers loads and shows products @smoke",
-        "suite": "Category Pages",
-        "title": "labels-stickers loads and shows products @smoke",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 8726
-      },
-      {
-        "id": "desktop-chrome::Category Pages::labels-stickers lists Roll Labels",
-        "suite": "Category Pages",
-        "title": "labels-stickers lists Roll Labels",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 9055
-      },
-      {
-        "id": "desktop-chrome::Category Pages::clicking a product navigates to product page",
-        "suite": "Category Pages",
-        "title": "clicking a product navigates to product page",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 15681
-      },
-      {
-        "id": "desktop-chrome::Category Pages::labelsStickers category page loads without errors",
-        "suite": "Category Pages",
-        "title": "labelsStickers category page loads without errors",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 7244
-      },
-      {
-        "id": "desktop-chrome::Category Pages::packagingBoxes category page loads without errors",
-        "suite": "Category Pages",
-        "title": "packagingBoxes category page loads without errors",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 8760
-      },
-      {
-        "id": "desktop-chrome::Category Pages::bagsFlexible category page loads without errors",
-        "suite": "Category Pages",
-        "title": "bagsFlexible category page loads without errors",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 5501
-      },
-      {
-        "id": "desktop-chrome::Category Pages::bannersSign category page loads without errors",
-        "suite": "Category Pages",
-        "title": "bannersSign category page loads without errors",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 7533
-      },
-      {
-        "id": "desktop-chrome::Category Pages::marketingMaterials category page loads without errors",
-        "suite": "Category Pages",
-        "title": "marketingMaterials category page loads without errors",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 7686
-      },
-      {
-        "id": "desktop-chrome::Category Pages::tradingCards category page loads without errors",
-        "suite": "Category Pages",
-        "title": "tradingCards category page loads without errors",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 5870
-      },
-      {
-        "id": "desktop-chrome::Category Pages::wallpapers category page loads without errors",
-        "suite": "Category Pages",
-        "title": "wallpapers category page loads without errors",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 5118
-      },
-      {
-        "id": "desktop-chrome::Category Pages::apparel category page loads without errors",
-        "suite": "Category Pages",
-        "title": "apparel category page loads without errors",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 7160
-      },
-      {
-        "id": "desktop-chrome::Category Pages::labelJarCombo category page loads without errors",
-        "suite": "Category Pages",
-        "title": "labelJarCombo category page loads without errors",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 4844
-      },
-      {
-        "id": "desktop-chrome::Category Pages::material filter ?material=vinyl is accepted by server",
-        "suite": "Category Pages",
-        "title": "material filter ?material=vinyl is accepted by server",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 8756
-      },
-      {
-        "id": "desktop-chrome::Category Pages::product list is scrollable on mobile",
-        "suite": "Category Pages",
-        "title": "product list is scrollable on mobile",
-        "project": "desktop-chrome",
-        "status": "skipped",
-        "duration": 1788
-      },
-      {
-        "id": "desktop-firefox::Category Pages::labels-stickers loads and shows products @smoke",
-        "suite": "Category Pages",
-        "title": "labels-stickers loads and shows products @smoke",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 7038
-      },
-      {
-        "id": "desktop-firefox::Category Pages::labels-stickers lists Roll Labels",
-        "suite": "Category Pages",
-        "title": "labels-stickers lists Roll Labels",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 9509
-      },
-      {
-        "id": "desktop-firefox::Category Pages::clicking a product navigates to product page",
-        "suite": "Category Pages",
-        "title": "clicking a product navigates to product page",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 15704
-      },
-      {
-        "id": "desktop-firefox::Category Pages::labelsStickers category page loads without errors",
-        "suite": "Category Pages",
-        "title": "labelsStickers category page loads without errors",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 19093
-      },
-      {
-        "id": "desktop-firefox::Category Pages::packagingBoxes category page loads without errors",
-        "suite": "Category Pages",
-        "title": "packagingBoxes category page loads without errors",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 10340
-      },
-      {
-        "id": "desktop-firefox::Category Pages::bagsFlexible category page loads without errors",
-        "suite": "Category Pages",
-        "title": "bagsFlexible category page loads without errors",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 14198
-      },
-      {
-        "id": "desktop-firefox::Category Pages::bannersSign category page loads without errors",
-        "suite": "Category Pages",
-        "title": "bannersSign category page loads without errors",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 18071
-      },
-      {
-        "id": "desktop-firefox::Category Pages::marketingMaterials category page loads without errors",
-        "suite": "Category Pages",
-        "title": "marketingMaterials category page loads without errors",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 13705
-      },
-      {
-        "id": "desktop-firefox::Category Pages::tradingCards category page loads without errors",
-        "suite": "Category Pages",
-        "title": "tradingCards category page loads without errors",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 8903
-      },
-      {
-        "id": "desktop-firefox::Category Pages::wallpapers category page loads without errors",
-        "suite": "Category Pages",
-        "title": "wallpapers category page loads without errors",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 8419
-      },
-      {
-        "id": "desktop-firefox::Category Pages::apparel category page loads without errors",
-        "suite": "Category Pages",
-        "title": "apparel category page loads without errors",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 13120
-      },
-      {
-        "id": "desktop-firefox::Category Pages::labelJarCombo category page loads without errors",
-        "suite": "Category Pages",
-        "title": "labelJarCombo category page loads without errors",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 9429
-      },
-      {
-        "id": "desktop-firefox::Category Pages::material filter ?material=vinyl is accepted by server",
-        "suite": "Category Pages",
-        "title": "material filter ?material=vinyl is accepted by server",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 17621
-      },
-      {
-        "id": "desktop-firefox::Category Pages::product list is scrollable on mobile",
-        "suite": "Category Pages",
-        "title": "product list is scrollable on mobile",
-        "project": "desktop-firefox",
-        "status": "skipped",
-        "duration": 10657
-      },
-      {
-        "id": "desktop-safari::Category Pages::labels-stickers loads and shows products @smoke",
-        "suite": "Category Pages",
-        "title": "labels-stickers loads and shows products @smoke",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 20935
-      },
-      {
-        "id": "desktop-safari::Category Pages::labels-stickers lists Roll Labels",
-        "suite": "Category Pages",
-        "title": "labels-stickers lists Roll Labels",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 19209
-      },
-      {
-        "id": "desktop-safari::Category Pages::clicking a product navigates to product page",
-        "suite": "Category Pages",
-        "title": "clicking a product navigates to product page",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 35776
-      },
-      {
-        "id": "desktop-safari::Category Pages::labelsStickers category page loads without errors",
-        "suite": "Category Pages",
-        "title": "labelsStickers category page loads without errors",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 18581
-      },
-      {
-        "id": "desktop-safari::Category Pages::packagingBoxes category page loads without errors",
-        "suite": "Category Pages",
-        "title": "packagingBoxes category page loads without errors",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 26056
-      },
-      {
-        "id": "desktop-safari::Category Pages::bagsFlexible category page loads without errors",
-        "suite": "Category Pages",
-        "title": "bagsFlexible category page loads without errors",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 21559
-      },
-      {
-        "id": "desktop-safari::Category Pages::bannersSign category page loads without errors",
-        "suite": "Category Pages",
-        "title": "bannersSign category page loads without errors",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 28026
-      },
-      {
-        "id": "desktop-safari::Category Pages::marketingMaterials category page loads without errors",
-        "suite": "Category Pages",
-        "title": "marketingMaterials category page loads without errors",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 26324
-      },
-      {
-        "id": "desktop-safari::Category Pages::tradingCards category page loads without errors",
-        "suite": "Category Pages",
-        "title": "tradingCards category page loads without errors",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 21139
-      },
-      {
-        "id": "desktop-safari::Category Pages::wallpapers category page loads without errors",
-        "suite": "Category Pages",
-        "title": "wallpapers category page loads without errors",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 19889
-      },
-      {
-        "id": "desktop-safari::Category Pages::apparel category page loads without errors",
-        "suite": "Category Pages",
-        "title": "apparel category page loads without errors",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 18603
-      },
-      {
-        "id": "desktop-safari::Category Pages::labelJarCombo category page loads without errors",
-        "suite": "Category Pages",
-        "title": "labelJarCombo category page loads without errors",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 19115
-      },
-      {
-        "id": "desktop-safari::Category Pages::material filter ?material=vinyl is accepted by server",
-        "suite": "Category Pages",
-        "title": "material filter ?material=vinyl is accepted by server",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 25060
-      },
-      {
-        "id": "desktop-safari::Category Pages::product list is scrollable on mobile",
-        "suite": "Category Pages",
-        "title": "product list is scrollable on mobile",
-        "project": "desktop-safari",
-        "status": "skipped",
-        "duration": 6224
+        "status": "timedOut",
+        "duration": 61335
       },
       {
         "id": "mobile-ios::Category Pages::labels-stickers loads and shows products @smoke",
@@ -2485,7 +1861,7 @@
         "title": "labels-stickers loads and shows products @smoke",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 15479
+        "duration": 2913
       },
       {
         "id": "mobile-ios::Category Pages::labels-stickers lists Roll Labels",
@@ -2493,7 +1869,7 @@
         "title": "labels-stickers lists Roll Labels",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 15514
+        "duration": 2739
       },
       {
         "id": "mobile-ios::Category Pages::clicking a product navigates to product page",
@@ -2501,7 +1877,7 @@
         "title": "clicking a product navigates to product page",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 31979
+        "duration": 7380
       },
       {
         "id": "mobile-ios::Category Pages::labelsStickers category page loads without errors",
@@ -2509,7 +1885,7 @@
         "title": "labelsStickers category page loads without errors",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 13382
+        "duration": 2562
       },
       {
         "id": "mobile-ios::Category Pages::packagingBoxes category page loads without errors",
@@ -2517,7 +1893,7 @@
         "title": "packagingBoxes category page loads without errors",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 21034
+        "duration": 2766
       },
       {
         "id": "mobile-ios::Category Pages::bagsFlexible category page loads without errors",
@@ -2525,7 +1901,7 @@
         "title": "bagsFlexible category page loads without errors",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 18064
+        "duration": 2548
       },
       {
         "id": "mobile-ios::Category Pages::bannersSign category page loads without errors",
@@ -2533,7 +1909,7 @@
         "title": "bannersSign category page loads without errors",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 20198
+        "duration": 2579
       },
       {
         "id": "mobile-ios::Category Pages::marketingMaterials category page loads without errors",
@@ -2541,7 +1917,7 @@
         "title": "marketingMaterials category page loads without errors",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 17986
+        "duration": 2667
       },
       {
         "id": "mobile-ios::Category Pages::tradingCards category page loads without errors",
@@ -2549,7 +1925,7 @@
         "title": "tradingCards category page loads without errors",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 17505
+        "duration": 2253
       },
       {
         "id": "mobile-ios::Category Pages::wallpapers category page loads without errors",
@@ -2557,7 +1933,7 @@
         "title": "wallpapers category page loads without errors",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 14776
+        "duration": 2218
       },
       {
         "id": "mobile-ios::Category Pages::apparel category page loads without errors",
@@ -2565,7 +1941,7 @@
         "title": "apparel category page loads without errors",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 18312
+        "duration": 2346
       },
       {
         "id": "mobile-ios::Category Pages::labelJarCombo category page loads without errors",
@@ -2573,7 +1949,7 @@
         "title": "labelJarCombo category page loads without errors",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 10954
+        "duration": 2264
       },
       {
         "id": "mobile-ios::Category Pages::material filter ?material=vinyl is accepted by server",
@@ -2581,7 +1957,7 @@
         "title": "material filter ?material=vinyl is accepted by server",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 7996
+        "duration": 4446
       },
       {
         "id": "mobile-ios::Category Pages::product list is scrollable on mobile",
@@ -2589,7 +1965,7 @@
         "title": "product list is scrollable on mobile",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 15912
+        "duration": 2506
       },
       {
         "id": "mobile-android::Category Pages::labels-stickers loads and shows products @smoke",
@@ -2597,7 +1973,7 @@
         "title": "labels-stickers loads and shows products @smoke",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 13956
+        "duration": 1931
       },
       {
         "id": "mobile-android::Category Pages::labels-stickers lists Roll Labels",
@@ -2605,7 +1981,7 @@
         "title": "labels-stickers lists Roll Labels",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 8172
+        "duration": 1666
       },
       {
         "id": "mobile-android::Category Pages::clicking a product navigates to product page",
@@ -2613,7 +1989,7 @@
         "title": "clicking a product navigates to product page",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 9418
+        "duration": 4425
       },
       {
         "id": "mobile-android::Category Pages::labelsStickers category page loads without errors",
@@ -2621,7 +1997,7 @@
         "title": "labelsStickers category page loads without errors",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 5311
+        "duration": 1403
       },
       {
         "id": "mobile-android::Category Pages::packagingBoxes category page loads without errors",
@@ -2629,7 +2005,7 @@
         "title": "packagingBoxes category page loads without errors",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 11219
+        "duration": 1774
       },
       {
         "id": "mobile-android::Category Pages::bagsFlexible category page loads without errors",
@@ -2637,7 +2013,7 @@
         "title": "bagsFlexible category page loads without errors",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 9109
+        "duration": 1521
       },
       {
         "id": "mobile-android::Category Pages::bannersSign category page loads without errors",
@@ -2645,7 +2021,7 @@
         "title": "bannersSign category page loads without errors",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 9463
+        "duration": 1637
       },
       {
         "id": "mobile-android::Category Pages::marketingMaterials category page loads without errors",
@@ -2653,7 +2029,7 @@
         "title": "marketingMaterials category page loads without errors",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 9430
+        "duration": 1787
       },
       {
         "id": "mobile-android::Category Pages::tradingCards category page loads without errors",
@@ -2661,7 +2037,7 @@
         "title": "tradingCards category page loads without errors",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 6168
+        "duration": 1348
       },
       {
         "id": "mobile-android::Category Pages::wallpapers category page loads without errors",
@@ -2669,7 +2045,7 @@
         "title": "wallpapers category page loads without errors",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 12968
+        "duration": 1168
       },
       {
         "id": "mobile-android::Category Pages::apparel category page loads without errors",
@@ -2677,7 +2053,7 @@
         "title": "apparel category page loads without errors",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 15118
+        "duration": 1537
       },
       {
         "id": "mobile-android::Category Pages::labelJarCombo category page loads without errors",
@@ -2685,7 +2061,7 @@
         "title": "labelJarCombo category page loads without errors",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 12290
+        "duration": 1551
       },
       {
         "id": "mobile-android::Category Pages::material filter ?material=vinyl is accepted by server",
@@ -2693,7 +2069,7 @@
         "title": "material filter ?material=vinyl is accepted by server",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 11244
+        "duration": 2998
       },
       {
         "id": "mobile-android::Category Pages::product list is scrollable on mobile",
@@ -2701,7 +2077,7 @@
         "title": "product list is scrollable on mobile",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 8877
+        "duration": 1982
       },
       {
         "id": "mobile-ipad::Category Pages::labels-stickers loads and shows products @smoke",
@@ -2709,7 +2085,7 @@
         "title": "labels-stickers loads and shows products @smoke",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 30566
+        "duration": 3114
       },
       {
         "id": "mobile-ipad::Category Pages::labels-stickers lists Roll Labels",
@@ -2717,7 +2093,7 @@
         "title": "labels-stickers lists Roll Labels",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 40968
+        "duration": 2718
       },
       {
         "id": "mobile-ipad::Category Pages::clicking a product navigates to product page",
@@ -2725,7 +2101,7 @@
         "title": "clicking a product navigates to product page",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 36402
+        "duration": 6685
       },
       {
         "id": "mobile-ipad::Category Pages::labelsStickers category page loads without errors",
@@ -2733,7 +2109,7 @@
         "title": "labelsStickers category page loads without errors",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 25932
+        "duration": 2650
       },
       {
         "id": "mobile-ipad::Category Pages::packagingBoxes category page loads without errors",
@@ -2741,7 +2117,7 @@
         "title": "packagingBoxes category page loads without errors",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 24318
+        "duration": 3082
       },
       {
         "id": "mobile-ipad::Category Pages::bagsFlexible category page loads without errors",
@@ -2749,7 +2125,7 @@
         "title": "bagsFlexible category page loads without errors",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 26588
+        "duration": 2605
       },
       {
         "id": "mobile-ipad::Category Pages::bannersSign category page loads without errors",
@@ -2757,7 +2133,7 @@
         "title": "bannersSign category page loads without errors",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 19755
+        "duration": 2859
       },
       {
         "id": "mobile-ipad::Category Pages::marketingMaterials category page loads without errors",
@@ -2765,7 +2141,7 @@
         "title": "marketingMaterials category page loads without errors",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 22323
+        "duration": 3093
       },
       {
         "id": "mobile-ipad::Category Pages::tradingCards category page loads without errors",
@@ -2773,7 +2149,7 @@
         "title": "tradingCards category page loads without errors",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 13909
+        "duration": 2791
       },
       {
         "id": "mobile-ipad::Category Pages::wallpapers category page loads without errors",
@@ -2781,7 +2157,7 @@
         "title": "wallpapers category page loads without errors",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 12445
+        "duration": 2225
       },
       {
         "id": "mobile-ipad::Category Pages::apparel category page loads without errors",
@@ -2789,7 +2165,7 @@
         "title": "apparel category page loads without errors",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 19753
+        "duration": 3339
       },
       {
         "id": "mobile-ipad::Category Pages::labelJarCombo category page loads without errors",
@@ -2797,7 +2173,7 @@
         "title": "labelJarCombo category page loads without errors",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 13822
+        "duration": 3424
       },
       {
         "id": "mobile-ipad::Category Pages::material filter ?material=vinyl is accepted by server",
@@ -2805,7 +2181,7 @@
         "title": "material filter ?material=vinyl is accepted by server",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 15165
+        "duration": 5688
       },
       {
         "id": "mobile-ipad::Category Pages::product list is scrollable on mobile",
@@ -2813,79 +2189,7 @@
         "title": "product list is scrollable on mobile",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 17064
-      },
-      {
-        "id": "desktop-chrome::[Sync] Navigation::logo always navigates to homepage",
-        "suite": "[Sync] Navigation",
-        "title": "logo always navigates to homepage",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 3131
-      },
-      {
-        "id": "desktop-chrome::[Sync] Navigation::cart icon is always reachable",
-        "suite": "[Sync] Navigation",
-        "title": "cart icon is always reachable",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 5067
-      },
-      {
-        "id": "desktop-chrome::[Sync] Navigation::Labels & Stickers category is reachable from any device",
-        "suite": "[Sync] Navigation",
-        "title": "Labels & Stickers category is reachable from any device",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 5937
-      },
-      {
-        "id": "desktop-firefox::[Sync] Navigation::logo always navigates to homepage",
-        "suite": "[Sync] Navigation",
-        "title": "logo always navigates to homepage",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 16806
-      },
-      {
-        "id": "desktop-firefox::[Sync] Navigation::cart icon is always reachable",
-        "suite": "[Sync] Navigation",
-        "title": "cart icon is always reachable",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 16387
-      },
-      {
-        "id": "desktop-firefox::[Sync] Navigation::Labels & Stickers category is reachable from any device",
-        "suite": "[Sync] Navigation",
-        "title": "Labels & Stickers category is reachable from any device",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 18209
-      },
-      {
-        "id": "desktop-safari::[Sync] Navigation::logo always navigates to homepage",
-        "suite": "[Sync] Navigation",
-        "title": "logo always navigates to homepage",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 17838
-      },
-      {
-        "id": "desktop-safari::[Sync] Navigation::cart icon is always reachable",
-        "suite": "[Sync] Navigation",
-        "title": "cart icon is always reachable",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 15563
-      },
-      {
-        "id": "desktop-safari::[Sync] Navigation::Labels & Stickers category is reachable from any device",
-        "suite": "[Sync] Navigation",
-        "title": "Labels & Stickers category is reachable from any device",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 18522
+        "duration": 2915
       },
       {
         "id": "mobile-ios::[Sync] Navigation::logo always navigates to homepage",
@@ -2893,7 +2197,7 @@
         "title": "logo always navigates to homepage",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 15489
+        "duration": 3224
       },
       {
         "id": "mobile-ios::[Sync] Navigation::cart icon is always reachable",
@@ -2901,7 +2205,7 @@
         "title": "cart icon is always reachable",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 10920
+        "duration": 2725
       },
       {
         "id": "mobile-ios::[Sync] Navigation::Labels & Stickers category is reachable from any device",
@@ -2909,7 +2213,7 @@
         "title": "Labels & Stickers category is reachable from any device",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 15035
+        "duration": 4389
       },
       {
         "id": "mobile-android::[Sync] Navigation::logo always navigates to homepage",
@@ -2917,7 +2221,7 @@
         "title": "logo always navigates to homepage",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 9121
+        "duration": 1535
       },
       {
         "id": "mobile-android::[Sync] Navigation::cart icon is always reachable",
@@ -2925,7 +2229,7 @@
         "title": "cart icon is always reachable",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 7726
+        "duration": 1467
       },
       {
         "id": "mobile-android::[Sync] Navigation::Labels & Stickers category is reachable from any device",
@@ -2933,7 +2237,7 @@
         "title": "Labels & Stickers category is reachable from any device",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 7550
+        "duration": 2942
       },
       {
         "id": "mobile-ipad::[Sync] Navigation::logo always navigates to homepage",
@@ -2941,7 +2245,7 @@
         "title": "logo always navigates to homepage",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 18278
+        "duration": 3782
       },
       {
         "id": "mobile-ipad::[Sync] Navigation::cart icon is always reachable",
@@ -2949,7 +2253,7 @@
         "title": "cart icon is always reachable",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 25261
+        "duration": 2998
       },
       {
         "id": "mobile-ipad::[Sync] Navigation::Labels & Stickers category is reachable from any device",
@@ -2957,87 +2261,15 @@
         "title": "Labels & Stickers category is reachable from any device",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 24870
-      },
-      {
-        "id": "desktop-chrome::[Sync] Homepage content::hero heading text is the same on all devices",
-        "suite": "[Sync] Homepage content",
-        "title": "hero heading text is the same on all devices",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 5320
-      },
-      {
-        "id": "desktop-chrome::[Sync] Homepage content::Shop Packaging CTA is visible on all devices",
-        "suite": "[Sync] Homepage content",
-        "title": "Shop Packaging CTA is visible on all devices",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 5189
-      },
-      {
-        "id": "desktop-chrome::[Sync] Homepage content::footer contact info visible on all devices after scroll",
-        "suite": "[Sync] Homepage content",
-        "title": "footer contact info visible on all devices after scroll",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 5962
-      },
-      {
-        "id": "desktop-firefox::[Sync] Homepage content::hero heading text is the same on all devices",
-        "suite": "[Sync] Homepage content",
-        "title": "hero heading text is the same on all devices",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 10384
-      },
-      {
-        "id": "desktop-firefox::[Sync] Homepage content::Shop Packaging CTA is visible on all devices",
-        "suite": "[Sync] Homepage content",
-        "title": "Shop Packaging CTA is visible on all devices",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 13815
-      },
-      {
-        "id": "desktop-firefox::[Sync] Homepage content::footer contact info visible on all devices after scroll",
-        "suite": "[Sync] Homepage content",
-        "title": "footer contact info visible on all devices after scroll",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 11240
-      },
-      {
-        "id": "desktop-safari::[Sync] Homepage content::hero heading text is the same on all devices",
-        "suite": "[Sync] Homepage content",
-        "title": "hero heading text is the same on all devices",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 10926
-      },
-      {
-        "id": "desktop-safari::[Sync] Homepage content::Shop Packaging CTA is visible on all devices",
-        "suite": "[Sync] Homepage content",
-        "title": "Shop Packaging CTA is visible on all devices",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 14810
-      },
-      {
-        "id": "desktop-safari::[Sync] Homepage content::footer contact info visible on all devices after scroll",
-        "suite": "[Sync] Homepage content",
-        "title": "footer contact info visible on all devices after scroll",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 16795
+        "duration": 3843
       },
       {
         "id": "mobile-ios::[Sync] Homepage content::hero heading text is the same on all devices",
         "suite": "[Sync] Homepage content",
         "title": "hero heading text is the same on all devices",
         "project": "mobile-ios",
-        "status": "passed",
-        "duration": 13300
+        "status": "timedOut",
+        "duration": 60917
       },
       {
         "id": "mobile-ios::[Sync] Homepage content::Shop Packaging CTA is visible on all devices",
@@ -3045,7 +2277,7 @@
         "title": "Shop Packaging CTA is visible on all devices",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 10450
+        "duration": 3998
       },
       {
         "id": "mobile-ios::[Sync] Homepage content::footer contact info visible on all devices after scroll",
@@ -3053,15 +2285,15 @@
         "title": "footer contact info visible on all devices after scroll",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 10168
+        "duration": 5036
       },
       {
         "id": "mobile-android::[Sync] Homepage content::hero heading text is the same on all devices",
         "suite": "[Sync] Homepage content",
         "title": "hero heading text is the same on all devices",
         "project": "mobile-android",
-        "status": "passed",
-        "duration": 5887
+        "status": "timedOut",
+        "duration": 60510
       },
       {
         "id": "mobile-android::[Sync] Homepage content::Shop Packaging CTA is visible on all devices",
@@ -3069,7 +2301,7 @@
         "title": "Shop Packaging CTA is visible on all devices",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 4998
+        "duration": 1584
       },
       {
         "id": "mobile-android::[Sync] Homepage content::footer contact info visible on all devices after scroll",
@@ -3077,15 +2309,15 @@
         "title": "footer contact info visible on all devices after scroll",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 5940
+        "duration": 2443
       },
       {
         "id": "mobile-ipad::[Sync] Homepage content::hero heading text is the same on all devices",
         "suite": "[Sync] Homepage content",
         "title": "hero heading text is the same on all devices",
         "project": "mobile-ipad",
-        "status": "passed",
-        "duration": 17386
+        "status": "timedOut",
+        "duration": 61277
       },
       {
         "id": "mobile-ipad::[Sync] Homepage content::Shop Packaging CTA is visible on all devices",
@@ -3093,7 +2325,7 @@
         "title": "Shop Packaging CTA is visible on all devices",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 13329
+        "duration": 3354
       },
       {
         "id": "mobile-ipad::[Sync] Homepage content::footer contact info visible on all devices after scroll",
@@ -3101,55 +2333,7 @@
         "title": "footer contact info visible on all devices after scroll",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 11820
-      },
-      {
-        "id": "desktop-chrome::[Sync] Category pages::labels-stickers shows at least 1 product on all devices",
-        "suite": "[Sync] Category pages",
-        "title": "labels-stickers shows at least 1 product on all devices",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 4769
-      },
-      {
-        "id": "desktop-chrome::[Sync] Category pages::product link navigates to /product/ on all devices",
-        "suite": "[Sync] Category pages",
-        "title": "product link navigates to /product/ on all devices",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 11045
-      },
-      {
-        "id": "desktop-firefox::[Sync] Category pages::labels-stickers shows at least 1 product on all devices",
-        "suite": "[Sync] Category pages",
-        "title": "labels-stickers shows at least 1 product on all devices",
-        "project": "desktop-firefox",
-        "status": "failed",
-        "duration": 8895
-      },
-      {
-        "id": "desktop-firefox::[Sync] Category pages::product link navigates to /product/ on all devices",
-        "suite": "[Sync] Category pages",
-        "title": "product link navigates to /product/ on all devices",
-        "project": "desktop-firefox",
-        "status": "timedOut",
-        "duration": 73011
-      },
-      {
-        "id": "desktop-safari::[Sync] Category pages::labels-stickers shows at least 1 product on all devices",
-        "suite": "[Sync] Category pages",
-        "title": "labels-stickers shows at least 1 product on all devices",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 15699
-      },
-      {
-        "id": "desktop-safari::[Sync] Category pages::product link navigates to /product/ on all devices",
-        "suite": "[Sync] Category pages",
-        "title": "product link navigates to /product/ on all devices",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 26470
+        "duration": 4466
       },
       {
         "id": "mobile-ios::[Sync] Category pages::labels-stickers shows at least 1 product on all devices",
@@ -3157,7 +2341,7 @@
         "title": "labels-stickers shows at least 1 product on all devices",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 9733
+        "duration": 3335
       },
       {
         "id": "mobile-ios::[Sync] Category pages::product link navigates to /product/ on all devices",
@@ -3165,7 +2349,7 @@
         "title": "product link navigates to /product/ on all devices",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 22144
+        "duration": 9115
       },
       {
         "id": "mobile-android::[Sync] Category pages::labels-stickers shows at least 1 product on all devices",
@@ -3173,7 +2357,7 @@
         "title": "labels-stickers shows at least 1 product on all devices",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 5776
+        "duration": 1466
       },
       {
         "id": "mobile-android::[Sync] Category pages::product link navigates to /product/ on all devices",
@@ -3181,7 +2365,7 @@
         "title": "product link navigates to /product/ on all devices",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 27161
+        "duration": 4251
       },
       {
         "id": "mobile-ipad::[Sync] Category pages::labels-stickers shows at least 1 product on all devices",
@@ -3189,7 +2373,7 @@
         "title": "labels-stickers shows at least 1 product on all devices",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 24478
+        "duration": 3034
       },
       {
         "id": "mobile-ipad::[Sync] Category pages::product link navigates to /product/ on all devices",
@@ -3197,55 +2381,7 @@
         "title": "product link navigates to /product/ on all devices",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 31105
-      },
-      {
-        "id": "desktop-chrome::[Sync] Product configurator::roll-labels page loads without 404 on all devices",
-        "suite": "[Sync] Product configurator",
-        "title": "roll-labels page loads without 404 on all devices",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 35625
-      },
-      {
-        "id": "desktop-chrome::[Sync] Product configurator::no horizontal overflow on product page (any device)",
-        "suite": "[Sync] Product configurator",
-        "title": "no horizontal overflow on product page (any device)",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 34705
-      },
-      {
-        "id": "desktop-firefox::[Sync] Product configurator::roll-labels page loads without 404 on all devices",
-        "suite": "[Sync] Product configurator",
-        "title": "roll-labels page loads without 404 on all devices",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 21332
-      },
-      {
-        "id": "desktop-firefox::[Sync] Product configurator::no horizontal overflow on product page (any device)",
-        "suite": "[Sync] Product configurator",
-        "title": "no horizontal overflow on product page (any device)",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 22035
-      },
-      {
-        "id": "desktop-safari::[Sync] Product configurator::roll-labels page loads without 404 on all devices",
-        "suite": "[Sync] Product configurator",
-        "title": "roll-labels page loads without 404 on all devices",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 28386
-      },
-      {
-        "id": "desktop-safari::[Sync] Product configurator::no horizontal overflow on product page (any device)",
-        "suite": "[Sync] Product configurator",
-        "title": "no horizontal overflow on product page (any device)",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 32666
+        "duration": 8275
       },
       {
         "id": "mobile-ios::[Sync] Product configurator::roll-labels page loads without 404 on all devices",
@@ -3253,7 +2389,7 @@
         "title": "roll-labels page loads without 404 on all devices",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 30856
+        "duration": 20752
       },
       {
         "id": "mobile-ios::[Sync] Product configurator::no horizontal overflow on product page (any device)",
@@ -3261,7 +2397,7 @@
         "title": "no horizontal overflow on product page (any device)",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 28852
+        "duration": 19429
       },
       {
         "id": "mobile-android::[Sync] Product configurator::roll-labels page loads without 404 on all devices",
@@ -3269,7 +2405,7 @@
         "title": "roll-labels page loads without 404 on all devices",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 31175
+        "duration": 18178
       },
       {
         "id": "mobile-android::[Sync] Product configurator::no horizontal overflow on product page (any device)",
@@ -3277,7 +2413,7 @@
         "title": "no horizontal overflow on product page (any device)",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 30301
+        "duration": 19002
       },
       {
         "id": "mobile-ipad::[Sync] Product configurator::roll-labels page loads without 404 on all devices",
@@ -3285,7 +2421,7 @@
         "title": "roll-labels page loads without 404 on all devices",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 34632
+        "duration": 20302
       },
       {
         "id": "mobile-ipad::[Sync] Product configurator::no horizontal overflow on product page (any device)",
@@ -3293,55 +2429,7 @@
         "title": "no horizontal overflow on product page (any device)",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 32518
-      },
-      {
-        "id": "desktop-chrome::[Sync] Auth page::sign-in form renders on all devices",
-        "suite": "[Sync] Auth page",
-        "title": "sign-in form renders on all devices",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 12524
-      },
-      {
-        "id": "desktop-chrome::[Sync] Auth page::invalid login shows error on all devices",
-        "suite": "[Sync] Auth page",
-        "title": "invalid login shows error on all devices",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 11550
-      },
-      {
-        "id": "desktop-firefox::[Sync] Auth page::sign-in form renders on all devices",
-        "suite": "[Sync] Auth page",
-        "title": "sign-in form renders on all devices",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 7091
-      },
-      {
-        "id": "desktop-firefox::[Sync] Auth page::invalid login shows error on all devices",
-        "suite": "[Sync] Auth page",
-        "title": "invalid login shows error on all devices",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 8804
-      },
-      {
-        "id": "desktop-safari::[Sync] Auth page::sign-in form renders on all devices",
-        "suite": "[Sync] Auth page",
-        "title": "sign-in form renders on all devices",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 8215
-      },
-      {
-        "id": "desktop-safari::[Sync] Auth page::invalid login shows error on all devices",
-        "suite": "[Sync] Auth page",
-        "title": "invalid login shows error on all devices",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 10102
+        "duration": 20582
       },
       {
         "id": "mobile-ios::[Sync] Auth page::sign-in form renders on all devices",
@@ -3349,7 +2437,7 @@
         "title": "sign-in form renders on all devices",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 8026
+        "duration": 1446
       },
       {
         "id": "mobile-ios::[Sync] Auth page::invalid login shows error on all devices",
@@ -3357,7 +2445,7 @@
         "title": "invalid login shows error on all devices",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 8048
+        "duration": 1502
       },
       {
         "id": "mobile-android::[Sync] Auth page::sign-in form renders on all devices",
@@ -3365,7 +2453,7 @@
         "title": "sign-in form renders on all devices",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 7717
+        "duration": 834
       },
       {
         "id": "mobile-android::[Sync] Auth page::invalid login shows error on all devices",
@@ -3373,7 +2461,7 @@
         "title": "invalid login shows error on all devices",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 24331
+        "duration": 901
       },
       {
         "id": "mobile-ipad::[Sync] Auth page::sign-in form renders on all devices",
@@ -3381,7 +2469,7 @@
         "title": "sign-in form renders on all devices",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 12616
+        "duration": 1972
       },
       {
         "id": "mobile-ipad::[Sync] Auth page::invalid login shows error on all devices",
@@ -3389,55 +2477,7 @@
         "title": "invalid login shows error on all devices",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 11539
-      },
-      {
-        "id": "desktop-chrome::[Sync] SEO & meta tags::homepage has meta description on all devices",
-        "suite": "[Sync] SEO & meta tags",
-        "title": "homepage has meta description on all devices",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 13451
-      },
-      {
-        "id": "desktop-chrome::[Sync] SEO & meta tags::category page has canonical URL",
-        "suite": "[Sync] SEO & meta tags",
-        "title": "category page has canonical URL",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 14325
-      },
-      {
-        "id": "desktop-firefox::[Sync] SEO & meta tags::homepage has meta description on all devices",
-        "suite": "[Sync] SEO & meta tags",
-        "title": "homepage has meta description on all devices",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 9022
-      },
-      {
-        "id": "desktop-firefox::[Sync] SEO & meta tags::category page has canonical URL",
-        "suite": "[Sync] SEO & meta tags",
-        "title": "category page has canonical URL",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 8979
-      },
-      {
-        "id": "desktop-safari::[Sync] SEO & meta tags::homepage has meta description on all devices",
-        "suite": "[Sync] SEO & meta tags",
-        "title": "homepage has meta description on all devices",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 10498
-      },
-      {
-        "id": "desktop-safari::[Sync] SEO & meta tags::category page has canonical URL",
-        "suite": "[Sync] SEO & meta tags",
-        "title": "category page has canonical URL",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 10324
+        "duration": 2212
       },
       {
         "id": "mobile-ios::[Sync] SEO & meta tags::homepage has meta description on all devices",
@@ -3445,7 +2485,7 @@
         "title": "homepage has meta description on all devices",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 10335
+        "duration": 2197
       },
       {
         "id": "mobile-ios::[Sync] SEO & meta tags::category page has canonical URL",
@@ -3453,7 +2493,7 @@
         "title": "category page has canonical URL",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 10877
+        "duration": 1983
       },
       {
         "id": "mobile-android::[Sync] SEO & meta tags::homepage has meta description on all devices",
@@ -3461,7 +2501,7 @@
         "title": "homepage has meta description on all devices",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 15114
+        "duration": 1339
       },
       {
         "id": "mobile-android::[Sync] SEO & meta tags::category page has canonical URL",
@@ -3469,7 +2509,7 @@
         "title": "category page has canonical URL",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 12460
+        "duration": 1820
       },
       {
         "id": "mobile-ipad::[Sync] SEO & meta tags::homepage has meta description on all devices",
@@ -3477,7 +2517,7 @@
         "title": "homepage has meta description on all devices",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 12607
+        "duration": 3214
       },
       {
         "id": "mobile-ipad::[Sync] SEO & meta tags::category page has canonical URL",
@@ -3485,343 +2525,7 @@
         "title": "category page has canonical URL",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 11378
-      },
-      {
-        "id": "desktop-chrome::Homepage::loads with correct title @smoke",
-        "suite": "Homepage",
-        "title": "loads with correct title @smoke",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 12589
-      },
-      {
-        "id": "desktop-chrome::Homepage::logo is visible and links to homepage @smoke",
-        "suite": "Homepage",
-        "title": "logo is visible and links to homepage @smoke",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 6791
-      },
-      {
-        "id": "desktop-chrome::Homepage::hero heading is visible @smoke",
-        "suite": "Homepage",
-        "title": "hero heading is visible @smoke",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 6134
-      },
-      {
-        "id": "desktop-chrome::Homepage::hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
-        "suite": "Homepage",
-        "title": "hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 5130
-      },
-      {
-        "id": "desktop-chrome::Homepage::desktop nav shows category links",
-        "suite": "Homepage",
-        "title": "desktop nav shows category links",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 8089
-      },
-      {
-        "id": "desktop-chrome::Homepage::mobile: hamburger menu opens and shows categories",
-        "suite": "Homepage",
-        "title": "mobile: hamburger menu opens and shows categories",
-        "project": "desktop-chrome",
-        "status": "skipped",
-        "duration": 7278
-      },
-      {
-        "id": "desktop-chrome::Homepage::cart icon is accessible from header",
-        "suite": "Homepage",
-        "title": "cart icon is accessible from header",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 8143
-      },
-      {
-        "id": "desktop-chrome::Homepage::sign in link is accessible from header",
-        "suite": "Homepage",
-        "title": "sign in link is accessible from header",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 7670
-      },
-      {
-        "id": "desktop-chrome::Homepage::hero slider images render",
-        "suite": "Homepage",
-        "title": "hero slider images render",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 4712
-      },
-      {
-        "id": "desktop-chrome::Homepage::category cards are present on homepage",
-        "suite": "Homepage",
-        "title": "category cards are present on homepage",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 4566
-      },
-      {
-        "id": "desktop-chrome::Homepage::footer shows phone, email, and address",
-        "suite": "Homepage",
-        "title": "footer shows phone, email, and address",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 8457
-      },
-      {
-        "id": "desktop-chrome::Homepage::footer phone number is correct",
-        "suite": "Homepage",
-        "title": "footer phone number is correct",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 6920
-      },
-      {
-        "id": "desktop-chrome::Homepage::hero heading is visible on any viewport",
-        "suite": "Homepage",
-        "title": "hero heading is visible on any viewport",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 6363
-      },
-      {
-        "id": "desktop-chrome::Homepage::CTAs are tappable size on mobile",
-        "suite": "Homepage",
-        "title": "CTAs are tappable size on mobile",
-        "project": "desktop-chrome",
-        "status": "skipped",
-        "duration": 6501
-      },
-      {
-        "id": "desktop-firefox::Homepage::loads with correct title @smoke",
-        "suite": "Homepage",
-        "title": "loads with correct title @smoke",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 11252
-      },
-      {
-        "id": "desktop-firefox::Homepage::logo is visible and links to homepage @smoke",
-        "suite": "Homepage",
-        "title": "logo is visible and links to homepage @smoke",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 17291
-      },
-      {
-        "id": "desktop-firefox::Homepage::hero heading is visible @smoke",
-        "suite": "Homepage",
-        "title": "hero heading is visible @smoke",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 9849
-      },
-      {
-        "id": "desktop-firefox::Homepage::hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
-        "suite": "Homepage",
-        "title": "hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 9418
-      },
-      {
-        "id": "desktop-firefox::Homepage::desktop nav shows category links",
-        "suite": "Homepage",
-        "title": "desktop nav shows category links",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 9250
-      },
-      {
-        "id": "desktop-firefox::Homepage::mobile: hamburger menu opens and shows categories",
-        "suite": "Homepage",
-        "title": "mobile: hamburger menu opens and shows categories",
-        "project": "desktop-firefox",
-        "status": "skipped",
-        "duration": 7737
-      },
-      {
-        "id": "desktop-firefox::Homepage::cart icon is accessible from header",
-        "suite": "Homepage",
-        "title": "cart icon is accessible from header",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 5082
-      },
-      {
-        "id": "desktop-firefox::Homepage::sign in link is accessible from header",
-        "suite": "Homepage",
-        "title": "sign in link is accessible from header",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 8193
-      },
-      {
-        "id": "desktop-firefox::Homepage::hero slider images render",
-        "suite": "Homepage",
-        "title": "hero slider images render",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 9223
-      },
-      {
-        "id": "desktop-firefox::Homepage::category cards are present on homepage",
-        "suite": "Homepage",
-        "title": "category cards are present on homepage",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 8151
-      },
-      {
-        "id": "desktop-firefox::Homepage::footer shows phone, email, and address",
-        "suite": "Homepage",
-        "title": "footer shows phone, email, and address",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 11107
-      },
-      {
-        "id": "desktop-firefox::Homepage::footer phone number is correct",
-        "suite": "Homepage",
-        "title": "footer phone number is correct",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 10390
-      },
-      {
-        "id": "desktop-firefox::Homepage::hero heading is visible on any viewport",
-        "suite": "Homepage",
-        "title": "hero heading is visible on any viewport",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 13870
-      },
-      {
-        "id": "desktop-firefox::Homepage::CTAs are tappable size on mobile",
-        "suite": "Homepage",
-        "title": "CTAs are tappable size on mobile",
-        "project": "desktop-firefox",
-        "status": "skipped",
-        "duration": 10562
-      },
-      {
-        "id": "desktop-safari::Homepage::loads with correct title @smoke",
-        "suite": "Homepage",
-        "title": "loads with correct title @smoke",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 12241
-      },
-      {
-        "id": "desktop-safari::Homepage::logo is visible and links to homepage @smoke",
-        "suite": "Homepage",
-        "title": "logo is visible and links to homepage @smoke",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 10674
-      },
-      {
-        "id": "desktop-safari::Homepage::hero heading is visible @smoke",
-        "suite": "Homepage",
-        "title": "hero heading is visible @smoke",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 8277
-      },
-      {
-        "id": "desktop-safari::Homepage::hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
-        "suite": "Homepage",
-        "title": "hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 9610
-      },
-      {
-        "id": "desktop-safari::Homepage::desktop nav shows category links",
-        "suite": "Homepage",
-        "title": "desktop nav shows category links",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 7209
-      },
-      {
-        "id": "desktop-safari::Homepage::mobile: hamburger menu opens and shows categories",
-        "suite": "Homepage",
-        "title": "mobile: hamburger menu opens and shows categories",
-        "project": "desktop-safari",
-        "status": "skipped",
-        "duration": 13215
-      },
-      {
-        "id": "desktop-safari::Homepage::cart icon is accessible from header",
-        "suite": "Homepage",
-        "title": "cart icon is accessible from header",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 13007
-      },
-      {
-        "id": "desktop-safari::Homepage::sign in link is accessible from header",
-        "suite": "Homepage",
-        "title": "sign in link is accessible from header",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 11476
-      },
-      {
-        "id": "desktop-safari::Homepage::hero slider images render",
-        "suite": "Homepage",
-        "title": "hero slider images render",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 10657
-      },
-      {
-        "id": "desktop-safari::Homepage::category cards are present on homepage",
-        "suite": "Homepage",
-        "title": "category cards are present on homepage",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 9893
-      },
-      {
-        "id": "desktop-safari::Homepage::footer shows phone, email, and address",
-        "suite": "Homepage",
-        "title": "footer shows phone, email, and address",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 11894
-      },
-      {
-        "id": "desktop-safari::Homepage::footer phone number is correct",
-        "suite": "Homepage",
-        "title": "footer phone number is correct",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 10455
-      },
-      {
-        "id": "desktop-safari::Homepage::hero heading is visible on any viewport",
-        "suite": "Homepage",
-        "title": "hero heading is visible on any viewport",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 13514
-      },
-      {
-        "id": "desktop-safari::Homepage::CTAs are tappable size on mobile",
-        "suite": "Homepage",
-        "title": "CTAs are tappable size on mobile",
-        "project": "desktop-safari",
-        "status": "skipped",
-        "duration": 12104
+        "duration": 2554
       },
       {
         "id": "mobile-ios::Homepage::loads with correct title @smoke",
@@ -3829,7 +2533,7 @@
         "title": "loads with correct title @smoke",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 8554
+        "duration": 2196
       },
       {
         "id": "mobile-ios::Homepage::logo is visible and links to homepage @smoke",
@@ -3837,23 +2541,23 @@
         "title": "logo is visible and links to homepage @smoke",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 10572
+        "duration": 2565
       },
       {
         "id": "mobile-ios::Homepage::hero heading is visible @smoke",
         "suite": "Homepage",
         "title": "hero heading is visible @smoke",
         "project": "mobile-ios",
-        "status": "passed",
-        "duration": 5025
+        "status": "failed",
+        "duration": 7115
       },
       {
         "id": "mobile-ios::Homepage::hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
         "suite": "Homepage",
         "title": "hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
         "project": "mobile-ios",
-        "status": "passed",
-        "duration": 8375
+        "status": "failed",
+        "duration": 7825
       },
       {
         "id": "mobile-ios::Homepage::desktop nav shows category links",
@@ -3861,7 +2565,7 @@
         "title": "desktop nav shows category links",
         "project": "mobile-ios",
         "status": "skipped",
-        "duration": 6862
+        "duration": 2810
       },
       {
         "id": "mobile-ios::Homepage::mobile: hamburger menu opens and shows categories",
@@ -3869,7 +2573,7 @@
         "title": "mobile: hamburger menu opens and shows categories",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 6160
+        "duration": 3622
       },
       {
         "id": "mobile-ios::Homepage::cart icon is accessible from header",
@@ -3877,7 +2581,7 @@
         "title": "cart icon is accessible from header",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 3848
+        "duration": 2922
       },
       {
         "id": "mobile-ios::Homepage::sign in link is accessible from header",
@@ -3885,15 +2589,15 @@
         "title": "sign in link is accessible from header",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 10728
+        "duration": 3305
       },
       {
         "id": "mobile-ios::Homepage::hero slider images render",
         "suite": "Homepage",
         "title": "hero slider images render",
         "project": "mobile-ios",
-        "status": "passed",
-        "duration": 7933
+        "status": "failed",
+        "duration": 3366
       },
       {
         "id": "mobile-ios::Homepage::category cards are present on homepage",
@@ -3901,7 +2605,7 @@
         "title": "category cards are present on homepage",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 10233
+        "duration": 2785
       },
       {
         "id": "mobile-ios::Homepage::footer shows phone, email, and address",
@@ -3909,7 +2613,7 @@
         "title": "footer shows phone, email, and address",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 10479
+        "duration": 4352
       },
       {
         "id": "mobile-ios::Homepage::footer phone number is correct",
@@ -3917,15 +2621,15 @@
         "title": "footer phone number is correct",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 10502
+        "duration": 3620
       },
       {
         "id": "mobile-ios::Homepage::hero heading is visible on any viewport",
         "suite": "Homepage",
         "title": "hero heading is visible on any viewport",
         "project": "mobile-ios",
-        "status": "passed",
-        "duration": 9060
+        "status": "failed",
+        "duration": 7471
       },
       {
         "id": "mobile-ios::Homepage::CTAs are tappable size on mobile",
@@ -3933,7 +2637,7 @@
         "title": "CTAs are tappable size on mobile",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 9724
+        "duration": 2878
       },
       {
         "id": "mobile-android::Homepage::loads with correct title @smoke",
@@ -3941,7 +2645,7 @@
         "title": "loads with correct title @smoke",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 9865
+        "duration": 1399
       },
       {
         "id": "mobile-android::Homepage::logo is visible and links to homepage @smoke",
@@ -3949,23 +2653,23 @@
         "title": "logo is visible and links to homepage @smoke",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 18656
+        "duration": 1451
       },
       {
         "id": "mobile-android::Homepage::hero heading is visible @smoke",
         "suite": "Homepage",
         "title": "hero heading is visible @smoke",
         "project": "mobile-android",
-        "status": "passed",
-        "duration": 17528
+        "status": "failed",
+        "duration": 6288
       },
       {
         "id": "mobile-android::Homepage::hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
         "suite": "Homepage",
         "title": "hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
         "project": "mobile-android",
-        "status": "passed",
-        "duration": 15650
+        "status": "failed",
+        "duration": 6551
       },
       {
         "id": "mobile-android::Homepage::desktop nav shows category links",
@@ -3973,7 +2677,7 @@
         "title": "desktop nav shows category links",
         "project": "mobile-android",
         "status": "skipped",
-        "duration": 14830
+        "duration": 1746
       },
       {
         "id": "mobile-android::Homepage::mobile: hamburger menu opens and shows categories",
@@ -3981,7 +2685,7 @@
         "title": "mobile: hamburger menu opens and shows categories",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 14674
+        "duration": 1658
       },
       {
         "id": "mobile-android::Homepage::cart icon is accessible from header",
@@ -3989,7 +2693,7 @@
         "title": "cart icon is accessible from header",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 18412
+        "duration": 1357
       },
       {
         "id": "mobile-android::Homepage::sign in link is accessible from header",
@@ -3997,15 +2701,15 @@
         "title": "sign in link is accessible from header",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 14765
+        "duration": 1678
       },
       {
         "id": "mobile-android::Homepage::hero slider images render",
         "suite": "Homepage",
         "title": "hero slider images render",
         "project": "mobile-android",
-        "status": "passed",
-        "duration": 6334
+        "status": "failed",
+        "duration": 1676
       },
       {
         "id": "mobile-android::Homepage::category cards are present on homepage",
@@ -4013,7 +2717,7 @@
         "title": "category cards are present on homepage",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 6663
+        "duration": 1460
       },
       {
         "id": "mobile-android::Homepage::footer shows phone, email, and address",
@@ -4021,7 +2725,7 @@
         "title": "footer shows phone, email, and address",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 13158
+        "duration": 2358
       },
       {
         "id": "mobile-android::Homepage::footer phone number is correct",
@@ -4029,15 +2733,15 @@
         "title": "footer phone number is correct",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 15110
+        "duration": 2393
       },
       {
         "id": "mobile-android::Homepage::hero heading is visible on any viewport",
         "suite": "Homepage",
         "title": "hero heading is visible on any viewport",
         "project": "mobile-android",
-        "status": "passed",
-        "duration": 14163
+        "status": "failed",
+        "duration": 6524
       },
       {
         "id": "mobile-android::Homepage::CTAs are tappable size on mobile",
@@ -4045,7 +2749,7 @@
         "title": "CTAs are tappable size on mobile",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 12098
+        "duration": 1765
       },
       {
         "id": "mobile-ipad::Homepage::loads with correct title @smoke",
@@ -4053,7 +2757,7 @@
         "title": "loads with correct title @smoke",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 14211
+        "duration": 3095
       },
       {
         "id": "mobile-ipad::Homepage::logo is visible and links to homepage @smoke",
@@ -4061,23 +2765,23 @@
         "title": "logo is visible and links to homepage @smoke",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 17603
+        "duration": 4002
       },
       {
         "id": "mobile-ipad::Homepage::hero heading is visible @smoke",
         "suite": "Homepage",
         "title": "hero heading is visible @smoke",
         "project": "mobile-ipad",
-        "status": "passed",
-        "duration": 13745
+        "status": "failed",
+        "duration": 7704
       },
       {
         "id": "mobile-ipad::Homepage::hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
         "suite": "Homepage",
         "title": "hero CTAs — Shop Packaging and Get a Quote are visible @smoke",
         "project": "mobile-ipad",
-        "status": "passed",
-        "duration": 10886
+        "status": "failed",
+        "duration": 8206
       },
       {
         "id": "mobile-ipad::Homepage::desktop nav shows category links",
@@ -4085,7 +2789,7 @@
         "title": "desktop nav shows category links",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 9515
+        "duration": 3033
       },
       {
         "id": "mobile-ipad::Homepage::mobile: hamburger menu opens and shows categories",
@@ -4093,7 +2797,7 @@
         "title": "mobile: hamburger menu opens and shows categories",
         "project": "mobile-ipad",
         "status": "skipped",
-        "duration": 18127
+        "duration": 2925
       },
       {
         "id": "mobile-ipad::Homepage::cart icon is accessible from header",
@@ -4101,7 +2805,7 @@
         "title": "cart icon is accessible from header",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 19829
+        "duration": 2865
       },
       {
         "id": "mobile-ipad::Homepage::sign in link is accessible from header",
@@ -4109,15 +2813,15 @@
         "title": "sign in link is accessible from header",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 18948
+        "duration": 2903
       },
       {
         "id": "mobile-ipad::Homepage::hero slider images render",
         "suite": "Homepage",
         "title": "hero slider images render",
         "project": "mobile-ipad",
-        "status": "passed",
-        "duration": 18841
+        "status": "failed",
+        "duration": 3491
       },
       {
         "id": "mobile-ipad::Homepage::category cards are present on homepage",
@@ -4125,7 +2829,7 @@
         "title": "category cards are present on homepage",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 18828
+        "duration": 3429
       },
       {
         "id": "mobile-ipad::Homepage::footer shows phone, email, and address",
@@ -4133,7 +2837,7 @@
         "title": "footer shows phone, email, and address",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 17420
+        "duration": 4962
       },
       {
         "id": "mobile-ipad::Homepage::footer phone number is correct",
@@ -4141,15 +2845,15 @@
         "title": "footer phone number is correct",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 16080
+        "duration": 4932
       },
       {
         "id": "mobile-ipad::Homepage::hero heading is visible on any viewport",
         "suite": "Homepage",
         "title": "hero heading is visible on any viewport",
         "project": "mobile-ipad",
-        "status": "passed",
-        "duration": 13711
+        "status": "failed",
+        "duration": 8315
       },
       {
         "id": "mobile-ipad::Homepage::CTAs are tappable size on mobile",
@@ -4157,247 +2861,7 @@
         "title": "CTAs are tappable size on mobile",
         "project": "mobile-ipad",
         "status": "skipped",
-        "duration": 7716
-      },
-      {
-        "id": "desktop-chrome::Product Configurator::roll labels configurator loads @smoke",
-        "suite": "Product Configurator",
-        "title": "roll labels configurator loads @smoke",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 24128
-      },
-      {
-        "id": "desktop-chrome::Product Configurator::product title is visible after load",
-        "suite": "Product Configurator",
-        "title": "product title is visible after load",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 25051
-      },
-      {
-        "id": "desktop-chrome::Product Configurator::price updates when quantity changes",
-        "suite": "Product Configurator",
-        "title": "price updates when quantity changes",
-        "project": "desktop-chrome",
-        "status": "skipped",
-        "duration": 25585
-      },
-      {
-        "id": "desktop-chrome::Product Configurator::add to cart button is present",
-        "suite": "Product Configurator",
-        "title": "add to cart button is present",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 25915
-      },
-      {
-        "id": "desktop-chrome::Product Configurator::configurator is usable on mobile viewport",
-        "suite": "Product Configurator",
-        "title": "configurator is usable on mobile viewport",
-        "project": "desktop-chrome",
-        "status": "skipped",
-        "duration": 1076
-      },
-      {
-        "id": "desktop-chrome::Product Configurator::rollLabels product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "rollLabels product page loads without 404",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 25463
-      },
-      {
-        "id": "desktop-chrome::Product Configurator::stickerSheets product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "stickerSheets product page loads without 404",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 25008
-      },
-      {
-        "id": "desktop-chrome::Product Configurator::dieCutStickers product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "dieCutStickers product page loads without 404",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 24644
-      },
-      {
-        "id": "desktop-chrome::Product Configurator::individualStickers product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "individualStickers product page loads without 404",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 24269
-      },
-      {
-        "id": "desktop-chrome::Product Configurator::variableDataLabels product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "variableDataLabels product page loads without 404",
-        "project": "desktop-chrome",
-        "status": "passed",
-        "duration": 23252
-      },
-      {
-        "id": "desktop-firefox::Product Configurator::roll labels configurator loads @smoke",
-        "suite": "Product Configurator",
-        "title": "roll labels configurator loads @smoke",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 37912
-      },
-      {
-        "id": "desktop-firefox::Product Configurator::product title is visible after load",
-        "suite": "Product Configurator",
-        "title": "product title is visible after load",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 39657
-      },
-      {
-        "id": "desktop-firefox::Product Configurator::price updates when quantity changes",
-        "suite": "Product Configurator",
-        "title": "price updates when quantity changes",
-        "project": "desktop-firefox",
-        "status": "skipped",
-        "duration": 34367
-      },
-      {
-        "id": "desktop-firefox::Product Configurator::add to cart button is present",
-        "suite": "Product Configurator",
-        "title": "add to cart button is present",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 57546
-      },
-      {
-        "id": "desktop-firefox::Product Configurator::configurator is usable on mobile viewport",
-        "suite": "Product Configurator",
-        "title": "configurator is usable on mobile viewport",
-        "project": "desktop-firefox",
-        "status": "skipped",
-        "duration": 30604
-      },
-      {
-        "id": "desktop-firefox::Product Configurator::rollLabels product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "rollLabels product page loads without 404",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 37764
-      },
-      {
-        "id": "desktop-firefox::Product Configurator::stickerSheets product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "stickerSheets product page loads without 404",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 31414
-      },
-      {
-        "id": "desktop-firefox::Product Configurator::dieCutStickers product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "dieCutStickers product page loads without 404",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 31808
-      },
-      {
-        "id": "desktop-firefox::Product Configurator::individualStickers product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "individualStickers product page loads without 404",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 36712
-      },
-      {
-        "id": "desktop-firefox::Product Configurator::variableDataLabels product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "variableDataLabels product page loads without 404",
-        "project": "desktop-firefox",
-        "status": "passed",
-        "duration": 38350
-      },
-      {
-        "id": "desktop-safari::Product Configurator::roll labels configurator loads @smoke",
-        "suite": "Product Configurator",
-        "title": "roll labels configurator loads @smoke",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 35669
-      },
-      {
-        "id": "desktop-safari::Product Configurator::product title is visible after load",
-        "suite": "Product Configurator",
-        "title": "product title is visible after load",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 34318
-      },
-      {
-        "id": "desktop-safari::Product Configurator::price updates when quantity changes",
-        "suite": "Product Configurator",
-        "title": "price updates when quantity changes",
-        "project": "desktop-safari",
-        "status": "skipped",
-        "duration": 29836
-      },
-      {
-        "id": "desktop-safari::Product Configurator::add to cart button is present",
-        "suite": "Product Configurator",
-        "title": "add to cart button is present",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 36047
-      },
-      {
-        "id": "desktop-safari::Product Configurator::configurator is usable on mobile viewport",
-        "suite": "Product Configurator",
-        "title": "configurator is usable on mobile viewport",
-        "project": "desktop-safari",
-        "status": "skipped",
-        "duration": 6534
-      },
-      {
-        "id": "desktop-safari::Product Configurator::rollLabels product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "rollLabels product page loads without 404",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 34346
-      },
-      {
-        "id": "desktop-safari::Product Configurator::stickerSheets product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "stickerSheets product page loads without 404",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 31493
-      },
-      {
-        "id": "desktop-safari::Product Configurator::dieCutStickers product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "dieCutStickers product page loads without 404",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 33147
-      },
-      {
-        "id": "desktop-safari::Product Configurator::individualStickers product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "individualStickers product page loads without 404",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 28648
-      },
-      {
-        "id": "desktop-safari::Product Configurator::variableDataLabels product page loads without 404",
-        "suite": "Product Configurator",
-        "title": "variableDataLabels product page loads without 404",
-        "project": "desktop-safari",
-        "status": "passed",
-        "duration": 28426
+        "duration": 3209
       },
       {
         "id": "mobile-ios::Product Configurator::roll labels configurator loads @smoke",
@@ -4405,7 +2869,7 @@
         "title": "roll labels configurator loads @smoke",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 28845
+        "duration": 19761
       },
       {
         "id": "mobile-ios::Product Configurator::product title is visible after load",
@@ -4413,7 +2877,7 @@
         "title": "product title is visible after load",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 31959
+        "duration": 19501
       },
       {
         "id": "mobile-ios::Product Configurator::price updates when quantity changes",
@@ -4421,7 +2885,7 @@
         "title": "price updates when quantity changes",
         "project": "mobile-ios",
         "status": "skipped",
-        "duration": 25409
+        "duration": 19131
       },
       {
         "id": "mobile-ios::Product Configurator::add to cart button is present",
@@ -4429,7 +2893,7 @@
         "title": "add to cart button is present",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 29694
+        "duration": 19790
       },
       {
         "id": "mobile-ios::Product Configurator::configurator is usable on mobile viewport",
@@ -4437,7 +2901,7 @@
         "title": "configurator is usable on mobile viewport",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 35890
+        "duration": 19395
       },
       {
         "id": "mobile-ios::Product Configurator::rollLabels product page loads without 404",
@@ -4445,7 +2909,7 @@
         "title": "rollLabels product page loads without 404",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 34028
+        "duration": 18955
       },
       {
         "id": "mobile-ios::Product Configurator::stickerSheets product page loads without 404",
@@ -4453,7 +2917,7 @@
         "title": "stickerSheets product page loads without 404",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 33089
+        "duration": 19021
       },
       {
         "id": "mobile-ios::Product Configurator::dieCutStickers product page loads without 404",
@@ -4461,7 +2925,7 @@
         "title": "dieCutStickers product page loads without 404",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 29139
+        "duration": 18781
       },
       {
         "id": "mobile-ios::Product Configurator::individualStickers product page loads without 404",
@@ -4469,7 +2933,7 @@
         "title": "individualStickers product page loads without 404",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 25865
+        "duration": 19070
       },
       {
         "id": "mobile-ios::Product Configurator::variableDataLabels product page loads without 404",
@@ -4477,7 +2941,7 @@
         "title": "variableDataLabels product page loads without 404",
         "project": "mobile-ios",
         "status": "passed",
-        "duration": 40794
+        "duration": 19193
       },
       {
         "id": "mobile-android::Product Configurator::roll labels configurator loads @smoke",
@@ -4485,7 +2949,7 @@
         "title": "roll labels configurator loads @smoke",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 23265
+        "duration": 18034
       },
       {
         "id": "mobile-android::Product Configurator::product title is visible after load",
@@ -4493,7 +2957,7 @@
         "title": "product title is visible after load",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 19178
+        "duration": 18234
       },
       {
         "id": "mobile-android::Product Configurator::price updates when quantity changes",
@@ -4501,7 +2965,7 @@
         "title": "price updates when quantity changes",
         "project": "mobile-android",
         "status": "skipped",
-        "duration": 19094
+        "duration": 18252
       },
       {
         "id": "mobile-android::Product Configurator::add to cart button is present",
@@ -4509,7 +2973,7 @@
         "title": "add to cart button is present",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 22993
+        "duration": 18487
       },
       {
         "id": "mobile-android::Product Configurator::configurator is usable on mobile viewport",
@@ -4517,7 +2981,7 @@
         "title": "configurator is usable on mobile viewport",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 24236
+        "duration": 18133
       },
       {
         "id": "mobile-android::Product Configurator::rollLabels product page loads without 404",
@@ -4525,7 +2989,7 @@
         "title": "rollLabels product page loads without 404",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 23089
+        "duration": 18300
       },
       {
         "id": "mobile-android::Product Configurator::stickerSheets product page loads without 404",
@@ -4533,7 +2997,7 @@
         "title": "stickerSheets product page loads without 404",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 22684
+        "duration": 18032
       },
       {
         "id": "mobile-android::Product Configurator::dieCutStickers product page loads without 404",
@@ -4541,7 +3005,7 @@
         "title": "dieCutStickers product page loads without 404",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 21561
+        "duration": 18579
       },
       {
         "id": "mobile-android::Product Configurator::individualStickers product page loads without 404",
@@ -4549,7 +3013,7 @@
         "title": "individualStickers product page loads without 404",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 28747
+        "duration": 18605
       },
       {
         "id": "mobile-android::Product Configurator::variableDataLabels product page loads without 404",
@@ -4557,7 +3021,7 @@
         "title": "variableDataLabels product page loads without 404",
         "project": "mobile-android",
         "status": "passed",
-        "duration": 29480
+        "duration": 18396
       },
       {
         "id": "mobile-ipad::Product Configurator::roll labels configurator loads @smoke",
@@ -4565,7 +3029,7 @@
         "title": "roll labels configurator loads @smoke",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 36222
+        "duration": 20061
       },
       {
         "id": "mobile-ipad::Product Configurator::product title is visible after load",
@@ -4573,7 +3037,7 @@
         "title": "product title is visible after load",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 39999
+        "duration": 20321
       },
       {
         "id": "mobile-ipad::Product Configurator::price updates when quantity changes",
@@ -4581,7 +3045,7 @@
         "title": "price updates when quantity changes",
         "project": "mobile-ipad",
         "status": "skipped",
-        "duration": 36984
+        "duration": 19637
       },
       {
         "id": "mobile-ipad::Product Configurator::add to cart button is present",
@@ -4589,7 +3053,7 @@
         "title": "add to cart button is present",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 39326
+        "duration": 19702
       },
       {
         "id": "mobile-ipad::Product Configurator::configurator is usable on mobile viewport",
@@ -4597,7 +3061,7 @@
         "title": "configurator is usable on mobile viewport",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 37557
+        "duration": 21286
       },
       {
         "id": "mobile-ipad::Product Configurator::rollLabels product page loads without 404",
@@ -4605,7 +3069,7 @@
         "title": "rollLabels product page loads without 404",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 36834
+        "duration": 20170
       },
       {
         "id": "mobile-ipad::Product Configurator::stickerSheets product page loads without 404",
@@ -4613,7 +3077,7 @@
         "title": "stickerSheets product page loads without 404",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 37869
+        "duration": 19618
       },
       {
         "id": "mobile-ipad::Product Configurator::dieCutStickers product page loads without 404",
@@ -4621,7 +3085,7 @@
         "title": "dieCutStickers product page loads without 404",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 36282
+        "duration": 22561
       },
       {
         "id": "mobile-ipad::Product Configurator::individualStickers product page loads without 404",
@@ -4629,7 +3093,7 @@
         "title": "individualStickers product page loads without 404",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 28636
+        "duration": 19491
       },
       {
         "id": "mobile-ipad::Product Configurator::variableDataLabels product page loads without 404",
@@ -4637,7 +3101,31 @@
         "title": "variableDataLabels product page loads without 404",
         "project": "mobile-ipad",
         "status": "passed",
-        "duration": 37680
+        "duration": 19635
+      },
+      {
+        "id": "mobile-ios::Word Search::find \"cannabis\" across all pages",
+        "suite": "Word Search",
+        "title": "find \"cannabis\" across all pages",
+        "project": "mobile-ios",
+        "status": "passed",
+        "duration": 42008
+      },
+      {
+        "id": "mobile-android::Word Search::find \"cannabis\" across all pages",
+        "suite": "Word Search",
+        "title": "find \"cannabis\" across all pages",
+        "project": "mobile-android",
+        "status": "passed",
+        "duration": 33275
+      },
+      {
+        "id": "mobile-ipad::Word Search::find \"cannabis\" across all pages",
+        "suite": "Word Search",
+        "title": "find \"cannabis\" across all pages",
+        "project": "mobile-ipad",
+        "status": "passed",
+        "duration": 43071
       }
     ]
   }
